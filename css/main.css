@@ -318,7 +318,7 @@ section{
    margin-bottom: 3.5em;
     justify-content: space-around;
 }
-.flower {
+.product {
     display: flex;
     flex-direction: column;
     width: 254px;
@@ -329,16 +329,16 @@ section{
     border-radius: 4px;
     
 }
-.flower>div>h2{
+.product>div>h2{
     margin: 5px;
 }
-.flower>div>input {
+.product>div>input {
     width: 100px;
     text-align: end;
     margin: 5px;
     border-radius: 4px;
 }
-.flower>button{
+.product>button{
     color: #FFF;
     background-color: rgb(37, 124, 29);
     border-color:rgb(40, 124, 32);
@@ -353,7 +353,7 @@ section{
     border-radius: 4px;
     width: 80%;
 }
-.flower>button:active {
+.product>button:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(2px);
