@@ -5,7 +5,7 @@
 }
 html{
 	height: 100%;
-	background-color: #303030;
+	
 }
 
 body{
@@ -14,7 +14,8 @@ font-size: 24px;
 color: black;
 }
 section{
-	background-color: white;
+	display: flex;
+	flex-direction: column;
 	border-bottom: 1px solid black;
 	padding: 10px
 }
@@ -49,9 +50,35 @@ h2{
 	margin-top: 0 !important;
 	padding: 10px
 }
+section{
+	width: 100%;
+}
 #we{
-    display: flex;
-    justify-content: center
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+
+
+  
+}
+.address{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-flow: row;
+	padding: 10px;
+	float: left;
+	
+}
+ .info ul li{
+	list-style: none;
+	padding: 10px
+ }
+.map{
+
+	float: right;
+	padding: 10px
 }
 @media only screen and (min-width: 900px) {
 	h1{
@@ -90,7 +117,30 @@ h2{
 		color: rgb(24, 27, 27);
 		padding: 10px;
 	}
+	.address{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 10px;
+		
+		
+	}
+	#we{
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	
+	  
+	}
+	#we:hover{
+		height: 100%;
+		overflow: visible;
+		white-space: normal;
+	}
+
 }
 
 
@@ -122,6 +172,21 @@ h2{
 		justify-content: center;
 		margin: 30px;
 		padding: 10px
+	}
+	#we{
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	
+	  
+	}
+	#we:hover{
+		height: 100%;
+		overflow: visible;
+		white-space: normal;
 	}
 }
 
@@ -244,4 +309,87 @@ h2{
 
 }
 /*galr*/
+
+#catalog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 1.5em auto;
+   margin-bottom: 3.5em;
+    justify-content: space-around;
+}
+.flower {
+    display: flex;
+    flex-direction: column;
+    width: 254px;
+    border: 2px solid #e1e1e1;
+    margin: 1em;
+    align-items: flex-end;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    
+}
+.flower>div>h2{
+    margin: 5px;
+}
+.flower>div>input {
+    width: 100px;
+    text-align: end;
+    margin: 5px;
+    border-radius: 4px;
+}
+.flower>button{
+    color: #FFF;
+    background-color: rgb(37, 124, 29);
+    border-color:rgb(40, 124, 32);
+    margin: 10px auto;
+    cursor: pointer;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    width: 80%;
+}
+.flower>button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+
+p {
+    margin: .5em 2em;
+    line-height: 1.5;
+    letter-spacing: 1.7px;
+    padding: 1em;
+    color: #185168;
+    font-weight: 600;
+}
+span {
+    font-style: italic;
+    font-weight: bold;
+    color:  #0186bb;
+}
+a {
+    text-decoration: none;
+    color: #0186bb;
+}
+#total {
+    display: inline-block;
+    margin-left: 2em;
+}
+#submitAPurchase {
+    width: 100%;
+    background-color: #185168;
+    color: white; 
+}
+footer{
+	background-color: black;
+	color: white;
+	margin-bottom: 0px;
+	height: 30px;
+	font-size: 18px;
+}
 
