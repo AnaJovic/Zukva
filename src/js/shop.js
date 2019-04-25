@@ -39,6 +39,14 @@ let product = (function(){
         }
    
     })();
-    product.addToCatalog('Pasulj',200,100,'./images/semep.jpg');
+    product.addToCatalog('Beli Pasulj(200g)',180,100,'images/Product/pasuljb.jpg');
+    product.addToCatalog('Crni Pasulj(100g)',230,100,'images/Product/pasuljcrn.jpg');
+    product.addToCatalog('Crveni Pasulj(100g)',120,100,'images/Product/pasuljc.jpg');
+    product.addToCatalog('Žuti Pasulj(200g)',190,100,'images/Product/pasuljz.jpg');
+    product.addToCatalog('Šareni Pasulj(200g)',175,100,'images/Product/pasuljs.jpg');
+    product.addToCatalog('Cacarica(100g)',120,100,'images/Product/cacarica.jpg');
+    product.addToCatalog('Luk Crni(seme)',320,100,'images/Product/lukcrn.jpg');
+    product.addToCatalog('Luk Crveni(seme)',120,100,'images/Product/lukcrven.jpg');
+    product.addToCatalog('Beli Luk(seme)',190,100,'images/Product/lukbeo.jpg');
  
    
