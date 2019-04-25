@@ -74,9 +74,9 @@ section{
  p {
     margin: .5em 2em;
     line-height: 1.5;
-    letter-spacing: 1.7px;
     padding: 1em;
-    font-weight: 600;
+
+	text-align: justify
 }
 @media screen and (min-width: 992px) {
 
@@ -211,6 +211,17 @@ section{
 		height:300px
 
 	}
+	.submenu:hover #shopping-cart{
+		display: block;
+		position: absolute;
+		right:0;
+		top:100%;
+		z-index: 1;
+		background-color: white;
+		padding: 10px;
+		min-width:350px;;
+		font-size: 12px
+	} 
 
 }
 
@@ -231,7 +242,8 @@ section{
 }
 
 .menu ul {
-	display:inline-block;
+	display: flex;
+	flex-direction:row;
 }
 
 .menu li {
@@ -277,14 +289,17 @@ section{
 	}
 
 	.menu ul {
-		width:200px;
+		display: flex;
+	flex-direction:column;
+		width:100%;
 		position:absolute;
-		top:120%;
+		top:100%;
 		left:0px;
 		padding:10px 18px;
 		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
 		border-radius:3px;
 		background:#303030;
+		
 	}
 
 	.menu ul:after {
@@ -303,17 +318,21 @@ section{
 	.menu li {
 		margin:5px 0px 5px 0px;
 		float:none;
-		display:block;
+		display:flex;
+		justify-content: flex-end;
+		border-bottom: 2px solid rgb(78, 65, 65)
 	}
 
 	.menu a {
-		display:block;
+		display:flex;
+		justify-content: flex-end;
 	}
 
 	.toggle-nav {
 		padding:20px;
 		
-		display:inline-block;
+		display:flex;
+		justify-content: flex-end;
 		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
 		border-radius:3px;
 		background:#303030;
