@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Dokdo|Gloria+Hallelujah|Inconsolata:700|Shadows+Into+Light|Special+Elite|ZCOOL+KuaiLe" rel="stylesheet">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel="stylesheet">
+    <script src="./js/cart.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Cart</title>
+   
+
+
+</head>
+
+<body>
+        <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                          </ul>
+        </nav>
+    <header>
+           
+        <h1>Zukva</h1>
+    </header>
+   
+    <main>
+          
+        <div id="shopping-cart">
+            <table id="cart-contentTable" class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <span id="total"></span>
+            <div id="delivery">
+                   
+                        <h4>Delivery</h4>
+                        <input type="checkbox" name="delivery" value="Express Delivery" id="express">
+                        <label for="delivery">300 RSD Express Delivery</label><br><br>
+                    
+                    <div>
+            <span id="toPay"></span>
+        </div>
+    </div>
+</div>
+
+                   
+                 
+        <div id="user-data">
+            <form action="" method="post" id="forma">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Delivery address</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" id="firstName" name="firstName">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" id="lastName" name="lastName">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><input type="text" id="address" name="address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td><input type="text" id="city" name="city">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Postal Code:</td>
+                        <td><input type="text" id="postalCode" name="postalCode">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Telephone No:</td>
+                        <td><input type="text" id="phone" name="phone" placeholder="06*/****-***">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="text" id="email" name="email">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="fr2">
+                    <a type="submit" href="cart.html" class="button" id="submitAPurchase">submit a purchase</a>
+                </div>
+        </div>
+       
+               
+           
+            
+        
+    
+    </main>
+    <footer>
+            &copy;  Copryght by Zukva &nbsp;
+            
+         </footer>
+</body>
+
+</html>

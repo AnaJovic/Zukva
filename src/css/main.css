@@ -350,8 +350,14 @@ section{
     border-radius: 4px;
     
 }
-.product>div>h2{
+.product>div>h3{
     margin: 5px;
+}
+h3{
+	font-size: 20px
+}
+.product>div{
+	font-size: 18px
 }
 .product>div>input {
     width: 100px;
@@ -361,8 +367,8 @@ section{
 }
 .product>button{
     color: #FFF;
-    background-color: rgb(37, 124, 29);
-    border-color:rgb(40, 124, 32);
+    background-color:#303030;
+    border-color:#303030;
     margin: 10px auto;
     cursor: pointer;
     text-align: center;
@@ -375,7 +381,7 @@ section{
     width: 80%;
 }
 .product>button:active {
-    background-color: #3e8e41;
+    background-color: #303030;
     box-shadow: 0 5px #666;
     transform: translateY(2px);
   }
@@ -396,8 +402,79 @@ a {
 }
 #submitAPurchase {
     width: 100%;
-    background-color: #185168;
+    background-color:#303030;
     color: white; 
+}
+.submenu{
+    position: relative;
+}
+.submenu #shopping-cart {
+    display: none;
+}
+.submenu:hover #shopping-cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-width: 300px;
+}
+
+ul {
+    list-style: none;
+    display: block;
+}
+
+table {
+        margin-bottom: 2.5rem;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: table;
+}
+th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+
+}
+.button {
+    width: 45%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #E1E1E1;
+}
+.remove {
+    background-color: black;
+    border-radius: 50%;
+    padding: 3px 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 footer{
 	background-color: black;
