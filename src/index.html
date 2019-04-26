@@ -1,112 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Dokdo|Gloria+Hallelujah|Inconsolata:700|Shadows+Into+Light|Special+Elite|ZCOOL+KuaiLe" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Dokdo|Gloria+Hallelujah|Inconsolata:700|Shadows+Into+Light|Special+Elite|ZCOOL+KuaiLe"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/shop.js" defer></script>
+    <script src="./js/index.js" type="module" defer></script>
     <title>Zukva</title>
 </head>
+
 <body>
-    
+
 
     <header>
-        
-            <nav class="menu">
-                    <ul class="active">
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#shop">Shop</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li class="submenu"><img src="./images/cart.png" alt="error">
-                            <div id="shopping-cart">
-                                    <table id="cart-content" class="u-full-width">
-                                        <thead>
-                                            <tr>
-                                                <th>Image</th>
-                                                <th>Name</th>
-                                                <th>Price</th>
-                                                <th>Quantity</th>
-                                                <th>Total</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-            
-                                    <a href="#" id="clear-cart" class="button">Clear Cart</a>
-                                    <span id="total"></span>
-                                    <div><a type="submit" href="cart.html" class="button" id="shopgo">Go to cart</a></div>
-                                </div></li>
-                    </ul>
-                
-                    <a class="toggle-nav" href="#">&#9776;</a>
-            </nav>
-           
-              <div class="name">
-                    <h1>Zukva</h1></div>
-           
+
+        <nav class="menu">
+            <ul class="active">
+                <li><a href="#about">About us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="submenu"><img src="./images/cart.png" alt="error">
+                    <div id="shopping-cart">
+                        <table id="cart-content" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="clear-cart" class="button">Clear Cart</a>
+                        <span id="total"></span>
+                        <div><a type="submit" href="cart.html" class="button" id="shopgo">Go to cart</a></div>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="toggle-nav" href="#">&#9776;</a>
+        </nav>
+
+        <div class="name">
+            <h1>Zukva</h1>
+        </div>
+
     </header>
-    
+
     <main class="container">
         <section>
-        <h2 id="about">About us</h2>
-       
-        <div id="we">
-           <p>We are family Jović from Petrovac na Mlavi and we are growing organic fruits and vegetables, 
-            and we further process them, on our family estate "Zukva". Property was named after the water spring 
-            of the same name, and by the fountain built by our ancestors in 1933.We produce our fruits and vegetables
-            organicly, without usage of pesticides. We try to preserve autochthonous types of seeds. Some of the species
-             we grow are: beans, tomato, onions, zucchini, peppers, cucumbers, plums... We also sell jam, brandy and ajvar.
-           </p>
-          
-        </div>
-    </section>
+            <h2 id="about">About us</h2>
+            <hr>
+           <div class="container-fluid padding offset  ">
+            <div  class="row padding  margina-top">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+               <p>We are family Jovic from Petrovac na Mlavi and we are growing organic fruits and vegetables, 
+                and we further process them, on our family estate "Zukva". Property was named after the water spring 
+                of the same name, and by the fountain built by our ancestors in 1933. The word Zukva comes from the name of the grass that can be found in the fields in the environment,
+                 but it can also indicate the type of wild forest apples.
+               </p></div>
+               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5"><img src="images/Gallery/WP_20170512_17_18_59_Pro.jpg" alt="error" class="imga"></div>
+            </div>
+            </div>
+            <div class="container-fluid padding offset  ">
+                    <div id="we"  class="row padding ">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                       <p>We produce our fruits and vegetables
+                        organicly, without usage of pesticides. We try to preserve autochthonous types of seeds. Some of the species
+                         we grow are: beans, tomato, onions, zucchini, peppers, cucumbers, plums... We also sell jam, brandy and ajvar.
+                         We use traditional recipes for our products.
+                       </p></div>
+                       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5"><img src="images/Gallery/WP_20180409_16_33_20_Pro.jpg" alt="error" class="imga"></div>
+                    </div>
+                    </div>
+        </section>
         <section>
             <h2 id="gallery">Gallery</h2>
+            <hr>
         </section>
-       <section>
+        <section>
             <h2 id="shop">Shop</h2>
+            <hr>
             <div id="catalog"></div>
         </section>
-        <section >
+        <section>
             <h2 id="contact">Contact</h2>
+            <hr>
             <div class="address">
-            <div class="info">
-                <ul>
-                <li> You can contact us:</li>
-                <li> <i class="fa fa-phone"></i> mob:060/1234567</li>
-                <li><i class="fa fa-envelope-o"></i> email:zukva@gmail.com</li>
-                <li>On social media:</li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"> </i></a> <a href="https://www.instagram.com/ana_suton15/" target="_blank"><i class="fa fa-instagram"> </i></a></li>
-                
-                <li>Or find us at address:</li>
-                <li><i class="fa fa-map-marker"></i>Turski put bb</li>
-                
-            </ul>
-            
+                <div class="info">
+                    <ul>
+                        <li> You can contact us:</li>
+                        <li> <i class="fa fa-phone"></i> mob:060/1234567</li>
+                        <li><i class="fa fa-envelope-o"></i> email:zukva@gmail.com</li>
+                        <li>On social media:</li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"> </i></a> <a
+                                href="https://www.instagram.com/ana_suton15/" target="_blank"><i
+                                    class="fa fa-instagram"> </i></a></li>
+
+                        <li>Or find us at address:</li>
+                        <li><i class="fa fa-map-marker"></i>Turski put bb</li>
+
+                    </ul>
+                </div>
+                <div class="map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.2309313557125!2d21.393760315521035!3d44.36684777910332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475124464cdd17d5%3A0x55186e7a6d23cdc4!2sTurski+Put%2C+Petrovac!5e0!3m2!1sen!2srs!4v1556048547858!5m2!1sen!2srs"
+                        class="map" allowfullscreen></iframe></div>
             </div>
-            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.2309313557125!2d21.393760315521035!3d44.36684777910332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475124464cdd17d5%3A0x55186e7a6d23cdc4!2sTurski+Put%2C+Petrovac!5e0!3m2!1sen!2srs!4v1556048547858!5m2!1sen!2srs" class="map" allowfullscreen></iframe></div>
-        </div>
         </section>
-
- 
-
-    
-
     </main>
-   <footer>
-      &copy;  Copryght by Zukva &nbsp;
-      
-   </footer>
-
-  
+    <footer>
+        &copy; Copryght by Zukva &nbsp;
+    </footer>
 </body>
 
 </html>
