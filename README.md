@@ -28,4 +28,4 @@
         index.html  
 
  # Validation
- -html validator
+ -https://validator.w3.org/
