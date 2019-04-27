@@ -9,7 +9,6 @@ jQuery(document).ready(function () {
 
 // shop and cart
 let main = (function () {
-
 	function init() {
 		$catalog.on('click', buyProduct);
 		$catalog.on('input', calculateTotal);
@@ -44,7 +43,7 @@ let main = (function () {
 			quantity: parseInt(product.querySelector('.productQuantity').value),
 			productSum: product.querySelector('.productSum').value,
 			cart_id: cart
-		}
+		};
 		addIntoCart(productInfo);
 	}
 
@@ -58,7 +57,9 @@ let main = (function () {
 
 	function addIntoCart(product) {
 		const row = $('<tr></tr>');
-		const { title, price, quantity, image, productSum } = product;
+		const { 
+			title, price, quantity, image, productSum
+ } = product;
 		$(`    <td>
 				 <img src="${image}" width=50px>
 			</td>
@@ -72,7 +73,7 @@ let main = (function () {
 	`).appendTo(row);
 
 		row.appendTo($shoppingCartContent);
-		saveIntoStorage(product)
+		saveIntoStorage(product);
 	}
 
 	function saveTotalIntoStorage(product) {
@@ -118,7 +119,7 @@ let main = (function () {
 			if (productSS.cart_id == id) {
 				productsSS.splice(index, 1);
 			}
-		})
+		});
 
 		sessionStorage.setItem('products', JSON.stringify(productsSS));
 		saveTotalIntoStorage(productsSS);
@@ -128,7 +129,6 @@ let main = (function () {
 		clearSessionStorage();
 		$shoppingCartContent.html('');
 		$('#total').html('');
-
 	}
 
 	function clearSessionStorage() {
@@ -138,6 +138,6 @@ let main = (function () {
 
 	return {
 		init
-	}
+	};
 })();
-export default main
+export default main;

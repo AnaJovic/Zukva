@@ -1,5 +1,4 @@
 (function () {
-
     const $shoppCartCont = $('#cart-contentTable tbody'),
         delivery = $('#delivery');
 
@@ -34,7 +33,9 @@
         let productsSS = getProductFromStorage();
         let total = getTotalFromLocalStorage();
         productsSS.forEach(function (product) {
-            const { title, price, quantity, image, productSum } = product;
+            const {
+                 title, price, quantity, image, productSum 
+                } = product;
             const row = $('<tr></tr>');
             $(`
             <td>
@@ -46,7 +47,7 @@
             <td>${productSum}rsd</td>
         `).appendTo(row);
             row.appendTo($shoppCartCont);
-        })
+        });
         $('#total').text(`Your account: ${total} RSD`);
     }
 
@@ -58,15 +59,17 @@
         postalCode: /^[1-9]\d{4}$/,
         phone: /^\d{3}\/(\d{3}-?\d{4}|\d{4}-?\d{3})$/,
         email: /^[a-zšđčćž\-.]{3,}[0-9]*@[a-zšđčćž]{3,}.[a-zšđčćž]{2,3}$/
-    }
+    };
 
-    const formElements = {};
+    const formElements = {
+
+    };
 
     function getFormElements() {
         formElements.form = document.getElementById('forma');
         formElements.tbody = formElements.form.querySelector('tbody');
         for (tr of formElements.tbody.rows) {
-            var input = tr.querySelector('input');
+            let input = tr.querySelector('input');
             formElements[input.id] = input;
         }
     }

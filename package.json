@@ -18,5 +18,10 @@
   "homepage": "https://github.com/AnaJovic/Zavrsni-rad#readme",
   "dependencies": {
     "modules": "^0.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
   }
 }
