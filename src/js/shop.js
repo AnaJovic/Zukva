@@ -23,7 +23,7 @@ let product = (function() {
           const {img,name,price} = element;
       
            let $product = $(`<div class = 'product'>
-                              <img src = ${img} alt='${name}-img'>
+                              <img src = ${img} alt='${name}-img' class = 'imgprod'>
                               <div><h3>${name}</h3></div>
                               <div>price<input type = 'text' class = 'productPrice' value = '${price}' readonly></div>
                               <div>quantity: <input type = 'number' class = 'productQuantity' min = '0'></div>
