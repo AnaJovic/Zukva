@@ -55,11 +55,12 @@ module.exports = {
         "one-var-declaration-per-line":"off",
         "import/extensions":"off",
         "import/no-mutable-exports":"off",
-        "no-var":"error",
+        "no-var":"off",
         "no-undef":"off",
         "vars-on-top":"error",
         "default-case":"off",
-        "brace-style":"error"
+        "brace-style":"error",
+        "prefer-template":"off"
 
     }
         

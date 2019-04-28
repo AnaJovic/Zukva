@@ -11,8 +11,11 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/gallery.js"></script>
     <script src="./js/index.js" type="module" defer></script>
     <title>Zukva</title>
 </head>
@@ -72,7 +75,7 @@
                 of the same name, and by the fountain built by our ancestors in 1933. The word Zukva comes from the name of the grass that can be found in the fields in the environment,
                  but it can also indicate the type of wild forest apples.
                </p></div>
-               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5"><img src="images/Gallery/WP_20170512_17_44_51_Pro.jpg" alt="error" class="imga"></div>
+               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5"><img src="images/Gallery/Runi.jpg" alt="error" class="imga"></div>
             </div>
             </div>
             <div class="container-fluid padding offset  ">
@@ -83,13 +86,26 @@
                          we grow are: beans, tomato, onions, zucchini, peppers, cucumbers, plums... We also sell jam, brandy and ajvar.
                          We use traditional recipes for our products.
                        </p></div>
-                       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5"><img src="images/Gallery/WP_20180409_16_33_32_Pro.jpg" alt="error" class="imga"></div>
+                       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5"><img src="images/Gallery/Zukva.jpg" alt="error" class="imga"></div>
                     </div>
                     </div>
         </section>
         <section>
             <h2 id="gallery">Gallery</h2>
             <hr>
+            
+            <div id="photos">
+                
+            </div>
+           
+           <div class="contain">
+                
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              <img id="expandedImg">
+             
+              <div id="imgtext"></div>
+            </div> 
+          </div>
         </section>
         <section>
             <h2 id="shop">Shop</h2>
