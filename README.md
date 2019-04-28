@@ -34,10 +34,6 @@
  # Validation
  -https://validator.w3.org/
 
- # Start Project
- ```
-npm install
-```
-```
-npm run server
-```
+## Initializing the project
+After checking out project `npm install` command should be run. For running the server `npm run server` command should be run.
+
