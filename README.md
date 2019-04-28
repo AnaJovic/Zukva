@@ -10,6 +10,8 @@
     -npm
     -jQuery
     -Eslint
+    -JSON
+    -AJAX
  # Project structure
       Zukva
        src
@@ -26,6 +28,8 @@
            main.js
            shop.js
         index.html  
+        
+    
 
  # Validation
  -https://validator.w3.org/
