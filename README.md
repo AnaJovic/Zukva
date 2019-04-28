@@ -6,7 +6,6 @@
     -HTML
     -CSS
     -Java Script
-    -bootstrap
     -npm
     -jQuery
     -Eslint
@@ -16,20 +15,29 @@
       Zukva
        src
          css
-           main.css
            cart.css
- 
+           gallery.css
+           main.css
          images
             Gallery
             Product
          js
            cart.js
+           gallery.js
            index.js
            main.js
            shop.js
+        cart.html   
         index.html  
-        
+      db.json  
     
-
  # Validation
  -https://validator.w3.org/
+
+ ##Start Project
+ ```
+npm install
+```
+```
+npm run server
+```
