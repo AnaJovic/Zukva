@@ -88,7 +88,6 @@ let main = (function () {
 	function saveIntoStorage(product) {
 		let products = getProductFromStorage();
 		products.push(product);
-		saveTotalIntoStorage(products);
 		sessionStorage.setItem('products', JSON.stringify(products));
 	}
 
@@ -125,16 +124,16 @@ let main = (function () {
 		saveTotalIntoStorage(productsSS);
 	}
 
- function emptyCart() {
+  function emptyCart() {
 		clearSessionStorage();
 		$shoppingCartContent.html('');
 		$('#total').html('');
 	} 
-
+	clearSessionStorage();
 	function clearSessionStorage() {
 		sessionStorage.clear();
 		cart = 1;
-	}
+	} 
 
 	return {
 		start

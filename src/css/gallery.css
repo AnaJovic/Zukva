@@ -60,6 +60,9 @@ height: 100%;
     border: 1px solid gray;
     
   }
+  .closebtn{
+    font-size: 20px
+  }
 }
 
 @media (min-width: 768px) {
@@ -67,6 +70,7 @@ height: 100%;
     /* width: 30%; */
     display: inline-block;
   }
+ 
 }
 
  

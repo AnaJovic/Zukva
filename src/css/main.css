@@ -546,6 +546,7 @@ footer {
 		height: 300px !important;
 		border-radius: 2px;
 	}
+
 	#catalog {
 		display: flex;
 		flex-wrap: wrap;
