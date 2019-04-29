@@ -1,7 +1,7 @@
 import product from './shop.js';
 import main from './main.js';
 
-main.init();
+main.start();
 
 product.addToCatalog('Beli Pasulj(200g)', 120, 100, 'images/Product/pasuljb.jpg');
 product.addToCatalog('Crni Pasulj(100g)', 200, 100, 'images/Product/pasuljcrn.jpg');

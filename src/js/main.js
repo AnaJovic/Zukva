@@ -9,20 +9,20 @@ jQuery(document).ready(function () {
 
 // shop and cart
 let main = (function () {
-	function init() {
+	function start() {
 		$catalog.on('click', buyProduct);
 		$catalog.on('input', calculateTotal);
 		$shoppingCartContent.on('click', removeProduct);
-		$clearCartBtn.on('click', clearCart);
-		$(document).on('DOMContentLoaded', clearCart);
+		$emptyCartBtn.on('click', emptyCart);
+		$(document).on('DOMContentLoaded', emptyCart);
 	}
 	const $catalog = $('#catalog'),
 		$shoppingCartContent = $('#cart-content tbody'),
-		$clearCartBtn = $('#clear-cart');
+		$emptyCartBtn = $('#empty-cart');
 	let cart = 0;
 	function buyProduct(e) {
 		e.preventDefault();
-		if (e.target.classList.contains('add-to-cart')) {
+		if (e.target.classList.contains('buy-prod')) {
 			const product = e.target.parentElement;
 			const quantity = e.target.parentElement.querySelector('.productQuantity');
 			if (quantity.value < 0 || quantity.value === '') {
@@ -125,11 +125,11 @@ let main = (function () {
 		saveTotalIntoStorage(productsSS);
 	}
 
-	function clearCart() {
+ function emptyCart() {
 		clearSessionStorage();
 		$shoppingCartContent.html('');
 		$('#total').html('');
-	}
+	} 
 
 	function clearSessionStorage() {
 		sessionStorage.clear();
@@ -137,7 +137,7 @@ let main = (function () {
 	}
 
 	return {
-		init
+		start
 	};
 })();
 export default main;

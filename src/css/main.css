@@ -82,7 +82,10 @@ p {
 .toggle-nav {
 	display: none;
 }
-
+nav{
+	position: fixed;
+	z-index: 1;
+}
 .menu ul {
 	display: flex;
 	flex-direction: row;
