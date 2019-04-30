@@ -24,13 +24,13 @@ let product = (function () {
                 img, name, price 
                } = element;
 
-           let $products = $(`<div class = 'product'>
+           let $products = $(`<div class = 'product bradius'>
                              <img src = ${img} alt='${name}-img' class = 'imgprod'>
                              <div><h3>${name}</h3></div>
                              <div>price<input type = 'text' class = 'productPrice' value = '${price}' readonly></div>
-                             <div>quantity: <input type = 'number' class = 'productQuantity' min = '0'></div>
-                             <div>total price: <input type = 'number' class = 'productSum' readonly></div>
-                             <button type = 'submit' class = 'buy-prod'>Buy</button>
+                             <div>quantity: <input type = 'number' class = 'productQuantity bradius' min = '0'></div>
+                             <div>total price: <input type = 'number' class = 'productSum bradius' readonly></div>
+                             <button type = 'submit' class = 'buy-prod bradius'>Buy</button>
                          </div>`);
            $products.appendTo($catalog);
        });

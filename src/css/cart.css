@@ -62,12 +62,13 @@ th, td {
    width: 100%;
    padding: 1em;
 }
-
+.bradius{
+   border-radius:4px;
+}
 #user-data {
    width: 100%;
    max-width: 400px;
    background-color: #303030;
-   border-radius: 4px;
    height: 100%;
 }
 
@@ -76,7 +77,6 @@ th, td {
 }
 
 #user-data input {
-   border-radius: 4px;
    height: 30px;
    width: 200px;
 }
@@ -95,13 +95,12 @@ th, td {
    font-size: 14px;
    line-height: 38px;
    text-decoration: none;
-   border-radius: 4px;
    border: 1px solid black;
    cursor: pointer;
 }
 
 #delivery div {
-   margin: 1.5em auto;
+   margin:auto;
 }
 
 h4 {

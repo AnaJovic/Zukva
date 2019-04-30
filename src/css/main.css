@@ -72,6 +72,9 @@ p {
 	padding: 1em;
 }
 .imga{padding: 15px}
+.bradius{
+	border-radius: 4px
+}
 /*----- Nav -----*/
 
 .toggle-nav {
@@ -148,8 +151,7 @@ img.frame {
 	display: flex;
 	flex-wrap: wrap;
 	width: 80%;
-	margin: 1.5em auto;
-	margin-bottom: 3.5em;
+	margin:auto;
 	justify-content: space-around;
 }
 .product {
@@ -159,7 +161,6 @@ img.frame {
 	border: 2px solid #cec7c7;
 	margin: 1em;
 	align-items: flex-end;
-	border-radius: 4px;
 	font-size: 14px
 }
 .product>div>h3 {
@@ -172,7 +173,6 @@ h3 {
 	width: 100px;
 	text-align: end;
 	margin: 5px;
-	border-radius: 4px;
 }
 .product>button {
 	color: white;
@@ -185,7 +185,6 @@ h3 {
 	font-weight: 400;
 	line-height: 28px;
 	text-transform: uppercase;
-	border-radius: 4px;
 	width: 80%;
 }
 .product>button:active {
@@ -259,7 +258,6 @@ th {
 	text-decoration: none;
 	white-space: nowrap;
 	background-color: transparent;
-	border-radius: 4px;
 	border: 1px solid #303030;
 	cursor: pointer;
 }
@@ -353,8 +351,7 @@ footer {
 		display: flex;
 		flex-wrap: wrap;
 		width: 90%;
-		margin: 1em auto;
-		margin-bottom: 3.5em;
+		margin:auto;
 		justify-content: space-around;
 	}
 	.product {
@@ -450,8 +447,7 @@ footer {
 		justify-content: flex-start;
 		align-content: center;
 		width: 90%;
-		margin: 1em auto;
-		margin-bottom: 3.5em;
+		margin:auto;
 		justify-content: space-evenly;
 	}
 	.product {
@@ -590,8 +586,7 @@ footer {
 		justify-content: center;
 		align-content: center;
 		width: 100%;
-		margin: 1.5em auto;
-		margin-bottom: 3.5em;
+		margin:auto;
 		justify-content: space-around;
 	}
 	.product {
