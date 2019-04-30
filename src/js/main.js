@@ -51,7 +51,7 @@ let main = (function () {
 		let quantity = parseInt(e.target.value),
 			price = parseInt(e.target.parentElement.parentElement.querySelector('.productPrice').value),
 			productSum = e.target.parentElement.parentElement.querySelector('.productSum');
-		e.target.style.border = '2px inset white';
+		e.target.style.border = '1px solid olive';
 		productSum.value = price * quantity;
 	}
 
@@ -61,14 +61,14 @@ let main = (function () {
 			title, price, quantity, image, productSum
  } = product;
 		$(`    <td>
-				 <img src="${image}" width=50px>
+				 <img src="${image}" class="imgcart">
 			</td>
 			<td>${title}</td>
 			<td>${price}</td>
 			<td>${quantity}</td>
 			<td>${productSum}</td>
 			<td>
-				<a href="#" class="remove" id="${cart++}">X</a>
+				<a href="#" class="remove" id="${cart++}"><i class="fa fa-window-close fa-lg" aria-hidden="true"></i></a>
 			</td>
 	`).appendTo(row);
 
