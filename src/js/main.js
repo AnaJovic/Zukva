@@ -68,7 +68,7 @@ let main = (function () {
 			<td>${quantity}</td>
 			<td>${productSum}</td>
 			<td>
-				<a href="#" class="remove" id="${cart++}"><i class="fa fa-window-close fa-lg" aria-hidden="true"></i></a>
+				<a href="#" class="remove" id="${cart++}">X</i></a>
 			</td>
 	`).appendTo(row);
 
