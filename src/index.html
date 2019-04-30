@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Dokdo|Gloria+Hallelujah|Inconsolata:700|Shadows+Into+Light|Special+Elite|ZCOOL+KuaiLe"
-        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
@@ -22,10 +20,7 @@
 </head>
 
 <body>
-
-
     <header>
-
         <nav class="menu">
             <ul class="active">
                 <li><a href="#about">About us</a></li>
@@ -57,7 +52,6 @@
 
             <a class="toggle-nav" href="#">&#9776;</a>
         </nav>
-
         <div class="name">
             <h1>Zukva</h1>
         </div>
@@ -94,19 +88,13 @@
         <section>
             <h2 id="gallery">Gallery</h2>
             <hr>
-            
+            <div class="contain">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg"  src="images/Gallery/njiva.jpg" alt="err">
+                <div id="imgex"></div>
+              </div> 
             <div id="photos">
-                
             </div>
-           
-           <div class="contain">
-                
-              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-              <img id="expandedImg"  src="images/Gallery/njiva.jpg" alt="err">
-             
-              <div id="imgtext"></div>
-            </div> 
-          
         </section>
         <section>
             <h2 id="shop">Shop</h2>
@@ -142,5 +130,4 @@
         &copy; Copryght by Zukva &nbsp;
     </footer>
 </body>
-
 </html>

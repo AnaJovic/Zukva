@@ -34,14 +34,14 @@
         let total = getTotalFromLocalStorage();
         productsSS.forEach(function (product) {
             const {
-                 title, price, quantity, image, productSum 
+                 name, price, quantity, image, productSum 
                 } = product;
             const row = $('<tr></tr>');
             $(`
             <td>
                 <img src="${image}" width=50px>
             </td>
-            <td>${title}</td>
+            <td>${name}</td>
             <td>${price}</td>
             <td>${quantity}</td>
             <td>${productSum}rsd</td>

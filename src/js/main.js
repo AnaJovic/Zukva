@@ -1,4 +1,5 @@
-// navigation
+
+  // navigation
 jQuery(document).ready(function () {
 	jQuery('.toggle-nav').click(function (e) {
 		jQuery(this).toggleClass('active');
@@ -30,21 +31,21 @@ let main = (function () {
 				quantity.value = '';
 				e.target.parentElement.querySelector('.productSum').value = '';
 			} else {
-				getProducInfo(product);
+				getProdInfo(product);
 			}
 		}
 	}
 
-	function getProducInfo(product) {
+	function getProdInfo(product) {
 		const productInfo = {
 			image: product.querySelector('img').src,
-			title: product.querySelector('h3').textContent,
+			name: product.querySelector('h3').textContent,
 			price: product.querySelector('.productPrice').value,
 			quantity: parseInt(product.querySelector('.productQuantity').value),
 			productSum: product.querySelector('.productSum').value,
 			cart_id: cart
 		};
-		addIntoCart(productInfo);
+		addToCart(productInfo);
 	}
 
 	function calculateTotal(e) {
@@ -55,15 +56,15 @@ let main = (function () {
 		productSum.value = price * quantity;
 	}
 
-	function addIntoCart(product) {
+	function addToCart(product) {
 		const row = $('<tr></tr>');
 		const { 
-			title, price, quantity, image, productSum
+			name, price, quantity, image, productSum
  } = product;
 		$(`    <td>
 				 <img src="${image}" class="imgcart">
 			</td>
-			<td>${title}</td>
+			<td>${name}</td>
 			<td>${price}</td>
 			<td>${quantity}</td>
 			<td>${productSum}</td>
@@ -73,10 +74,10 @@ let main = (function () {
 	`).appendTo(row);
 
 		row.appendTo($shoppingCartContent);
-		saveIntoStorage(product);
+		saveToStorage(product);
 	}
 
-	function saveTotalIntoStorage(product) {
+	function saveTotalInStorage(product) {
 		let total = 0;
 		product.forEach(element => {
 			total = parseInt(total) + parseInt(element.productSum);
@@ -85,10 +86,10 @@ let main = (function () {
 		sessionStorage.setItem('total', JSON.stringify(total));
 	}
 
-	function saveIntoStorage(product) {
+	function saveToStorage(product) {
 		let products = getProductFromStorage();
 		products.push(product);
-		saveTotalIntoStorage(products);
+		saveTotalInStorage(products);
 		sessionStorage.setItem('products', JSON.stringify(products));
 	}
 
@@ -110,10 +111,10 @@ let main = (function () {
 			productId = product.querySelector('a').getAttribute('id');
 			console.log(productId);
 		}
-		removeProductFromSessionStorage(productId);
+		removeProductFromSStorage(productId);
 	}
 
-	function removeProductFromSessionStorage(id) {
+	function removeProductFromSStorage(id) {
 		let productsSS = getProductFromStorage();
 		productsSS.forEach(function (productSS, index) {
 			if (productSS.cart_id == id) {
@@ -122,16 +123,16 @@ let main = (function () {
 		});
 
 		sessionStorage.setItem('products', JSON.stringify(productsSS));
-		saveTotalIntoStorage(productsSS);
+		saveTotalInStorage(productsSS);
 	}
 
 	function emptyCart() {
-		clearSessionStorage();
+		emptySStorage();
 		$shoppingCartContent.html('');
 		$('#total').html('');
 	}
 
-	function clearSessionStorage() {
+	function emptySStorage() {
 		sessionStorage.clear();
 		cart = 1;
 	}

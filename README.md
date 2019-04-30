@@ -10,13 +10,11 @@
     -jQuery
     -Eslint
     -JSON
-    -AJAX
  # Project structure
       Zukva
        src
          css
            cart.css
-           gallery.css
            main.css
          images
             Gallery
@@ -29,7 +27,7 @@
            shop.js
         cart.html   
         index.html  
-      db.json  
+       
     
  # Validation
  -https://validator.w3.org/

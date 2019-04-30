@@ -11,32 +11,32 @@ let product = (function () {
        }
    }
 
-   function addToCatalog(name, price, quantity, img) {
+   function addToShop(name, price, quantity, img) {
        const product = new Product(name, price, quantity, img);
        arr.push(product);
-       createCatalog();
+       createShop();
    }
 
-   function createCatalog() {
+   function createShop() {
        $catalog.html('');
        arr.forEach(function (element) {
            const {
                 img, name, price 
                } = element;
 
-           let $product = $(`<div class = 'product'>
+           let $products = $(`<div class = 'product'>
                              <img src = ${img} alt='${name}-img' class = 'imgprod'>
                              <div><h3>${name}</h3></div>
                              <div>price<input type = 'text' class = 'productPrice' value = '${price}' readonly></div>
                              <div>quantity: <input type = 'number' class = 'productQuantity' min = '0'></div>
                              <div>total price: <input type = 'number' class = 'productSum' readonly></div>
-                             <button type = 'submit' class = 'buy-prod' id = '${name}'>Buy</button>
+                             <button type = 'submit' class = 'buy-prod'>Buy</button>
                          </div>`);
-           $product.appendTo($catalog);
+           $products.appendTo($catalog);
        });
    }
    return {
-       addToCatalog
+       addToShop
    };
 }
 )();
