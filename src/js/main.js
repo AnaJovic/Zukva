@@ -1,9 +1,9 @@
 
   // navigation
-jQuery(document).ready(function () {
-	jQuery('.toggle-nav').click(function (e) {
-		jQuery(this).toggleClass('active');
-		jQuery('.menu ul').toggleClass('active');
+  $(document).ready(function () {
+	$('.toggle-nav').click(function (e) {
+		$(this).toggleClass('active');
+		$('.menu ul').toggleClass('active');
 		e.preventDefault();
 	});
 });
@@ -13,12 +13,12 @@ let main = (function () {
 	function start() {
 		$catalog.on('click', buyProduct);
 		$catalog.on('input', calculateTotal);
-		$shoppingCartContent.on('click', removeProduct);
+		$shopCart.on('click', removeProduct);
 		$emptyCartBtn.on('click', emptyCart);
 		$(document).on('DOMContentLoaded', emptyCart);
 	}
 	const $catalog = $('#catalog'),
-		$shoppingCartContent = $('#cart-content tbody'),
+		$shopCart = $('#cart-content tbody'),
 		$emptyCartBtn = $('#empty-cart');
 	let cart = 0;
 	function buyProduct(e) {
@@ -52,7 +52,7 @@ let main = (function () {
 		let quantity = parseInt(e.target.value),
 			price = parseInt(e.target.parentElement.parentElement.querySelector('.productPrice').value),
 			productSum = e.target.parentElement.parentElement.querySelector('.productSum');
-		e.target.style.border = '1px solid olive';
+		e.target.style.border = '1px solid grey';
 		productSum.value = price * quantity;
 	}
 
@@ -73,7 +73,7 @@ let main = (function () {
 			</td>
 	`).appendTo(row);
 
-		row.appendTo($shoppingCartContent);
+		row.appendTo($shopCart);
 		saveToStorage(product);
 	}
 
@@ -128,7 +128,7 @@ let main = (function () {
 
 	function emptyCart() {
 		emptySStorage();
-		$shoppingCartContent.html('');
+		$shopCart.html('');
 		$('#total').html('');
 	}
 

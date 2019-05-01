@@ -27,6 +27,7 @@ h1 {
    color: rgb(104, 94, 94);
    text-align: center;
    font-family: 'ZCOOL KuaiLe', cursive;
+   margin-top: 50px
 }
 
 main {
@@ -37,7 +38,12 @@ main {
    align-content: flex-start;
  
 }
-
+nav{
+   position: fixed;
+   width: 100%;
+   font-size: 20px;
+	font-weight: bold;
+}
 #shopping-cart {
    width: 100%;
    max-width: 450px;

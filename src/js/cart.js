@@ -1,13 +1,13 @@
 (function () {
-    const $shoppCartCont = $('#cart-contentTable tbody'),
+    const $shopCartCont = $('#cart-contentTable tbody'),
         delivery = $('#delivery');
 
-    delivery.on('input', userInputs);
+    delivery.on('input', userInput);
 
     $(document).on('DOMContentLoaded', function () {
-        getFromSessionStorage();
-        getFormElements();
-        registerInputsEvents();
+        getFromSStorage();
+        getFormElement();
+        registerInputEvent();
     });
     function getProductFromStorage() {
         let products;
@@ -29,7 +29,7 @@
         return total;
     }
 
-    function getFromSessionStorage() {
+    function getFromSStorage() {
         let productsSS = getProductFromStorage();
         let total = getTotalFromLocalStorage();
         productsSS.forEach(function (product) {
@@ -46,10 +46,12 @@
             <td>${quantity}</td>
             <td>${productSum}rsd</td>
         `).appendTo(row);
-            row.appendTo($shoppCartCont);
+            row.appendTo($shopCartCont);
         });
         $('#total').text(`Your account: ${total} RSD`);
     }
+
+// regex for form elements
 
     const RegEx = {
         firstName: /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,11}\s?([A-ZŠĐŽĆČ][a-zšđčćž]{1,11})?$/,
@@ -65,8 +67,8 @@
 
     };
 
-    function getFormElements() {
-        formElements.form = document.getElementById('forma');
+    function getFormElement() {
+        formElements.form = document.getElementById('form');
         formElements.tbody = formElements.form.querySelector('tbody');
         for (tr of formElements.tbody.rows) {
             let input = tr.querySelector('input');
@@ -81,11 +83,11 @@
             formElements[e.target.id].style.borderBottom = '2px solid blue';
         }
     }
-    function registerInputsEvents(e) {
+    function registerInputEvent(e) {
         formElements.form.addEventListener('input', testInputReg);
     }
-
-    function userInputs(e) {
+// delivery
+    function userInput(e) {
         const check = e.target;
         switch (check.id) {
             case 'express1': expDel(check);

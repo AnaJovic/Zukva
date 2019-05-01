@@ -11,13 +11,13 @@ let product = (function () {
        }
    }
 
-   function addToShop(name, price, quantity, img) {
+   function addProduct(name, price, quantity, img) {
        const product = new Product(name, price, quantity, img);
        arr.push(product);
-       createShop();
+       createProduct();
    }
 
-   function createShop() {
+   function createProduct() {
        $catalog.html('');
        arr.forEach(function (element) {
            const {
@@ -36,7 +36,7 @@ let product = (function () {
        });
    }
    return {
-       addToShop
+       addProduct
    };
 }
 )();

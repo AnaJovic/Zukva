@@ -108,7 +108,7 @@ nav {
 }
 /*galr*/
 #photos{
-	overflow: scroll;
+	overflow-y: scroll;
 	height: 200px;
 }
 .picbox {
@@ -301,6 +301,7 @@ footer {
 		font-family: 'ZCOOL KuaiLe', cursive;
 		font-size: 120px;
 		color: rgb(66, 61, 61);
+		margin-top: 50px
 	}
 	h2 {
 		font-size: 40px;
