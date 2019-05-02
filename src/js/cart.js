@@ -61,7 +61,6 @@ function deliveryOpt(e) {
             break;
         case 'express2': expDelT(check);
             break;
-
     }
 }
 
@@ -71,6 +70,8 @@ function expDel(check) {
     if (check.checked) {
         toPay.style.display = 'block';
         toPay.textContent = `To pay: ${total + 300} RSD`;
+        let payS = total + 300;
+        sessionStorage.setItem('payS', JSON.stringify(payS));
     } else {
         toPay.style.display = 'none';
     }
@@ -81,10 +82,13 @@ function expDelT(check) {
     if (check.checked) {
         toPay.style.display = 'block';
         toPay.textContent = `To pay: ${total + 400} RSD`;
+        let payS = total + 400;
+        sessionStorage.setItem('payS', JSON.stringify(payS));
     } else {
         toPay.style.display = 'none';
     }
 }
+
 // regex for form elements
 
     const RegEx = {
@@ -120,7 +124,31 @@ function expDelT(check) {
     function registerInputEvent(e) {
         formData.form.addEventListener('input', testRegex);
     }
+ 
+    let testObject = [];
 
+    const button = document.getElementById('submit');
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const address = document.getElementById('address');
+    const city = document.getElementById('city');
+    const postalCode = document.getElementById('postalCode');
+    const phone = document.getElementById('phone');
+    const email = document.getElementById('email');
+  
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+      testObject.push({
+        firstName: firstName.value,
+        lastName: lastName.value,
+        address: address.value,
+        city: city.value,
+        postalCode: postalCode.value,
+        phone: phone.value,
+        email: email.value
+      });
+      sessionStorage.setItem('testObject', JSON.stringify(testObject));
+    });
 
 btn.onclick = function () {
   modal.style.display = 'block';
