@@ -7,6 +7,16 @@
 		e.preventDefault();
 	});
 });
+$(window).scroll(function () {
+    var height = $(window).scrollTop();
+    if (height > 50) {
+        $('#top').fadeIn();
+        $('#scroll').fadeOut();
+    } else {
+        $('#scroll').fadeIn();
+        $('#top').fadeOut();
+    }
+});
 
 // shop and cart
 let main = (function () {
@@ -26,17 +36,17 @@ let main = (function () {
 		if (e.target.classList.contains('buy-prod')) {
 			const product = e.target.parentElement;
 			const quantity = e.target.parentElement.querySelector('.productQuantity');
-			if (quantity.value < 0 || quantity.value === '') {
+			if (quantity.value <= 0 || quantity.value === '') {
 				quantity.style.border = '1px solid red';
 				quantity.value = '';
 				e.target.parentElement.querySelector('.productSum').value = '';
 			} else {
-				getProdInfo(product);
+				getProduct(product);
 			}
 		}
 	}
 
-	function getProdInfo(product) {
+	function getProduct(product) {
 		const productInfo = {
 			image: product.querySelector('img').src,
 			name: product.querySelector('h3').textContent,

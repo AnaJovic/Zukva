@@ -10,8 +10,8 @@ $(document).ready(function () {
   });
   function myFunction(imgs) {
   var expandImg = document.getElementById('expandedImg');
-  var imgText = document.getElementById('imgex');
+  var imgex = document.getElementById('imgex');
   expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
+  imgex.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = 'block';
   }

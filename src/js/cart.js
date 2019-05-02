@@ -1,12 +1,15 @@
+
 (function () {
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById('submit');
+    var span = document.getElementsByClassName('close')[0];
     const $shopCartCont = $('#cart-contentTable tbody'),
         delivery = $('#delivery');
-
-    delivery.on('input', userInput);
-
+  
+    delivery.on('input', deliveryOpt);
     $(document).on('DOMContentLoaded', function () {
         getFromSStorage();
-        getFormElement();
+        getFormData();
         registerInputEvent();
     });
     function getProductFromStorage() {
@@ -50,7 +53,38 @@
         });
         $('#total').text(`Your account: ${total} RSD`);
     }
+// delivery
+function deliveryOpt(e) {
+    const check = e.target;
+    switch (check.id) {
+        case 'express1': expDel(check);
+            break;
+        case 'express2': expDelT(check);
+            break;
 
+    }
+}
+
+function expDel(check) {
+    let total = getTotalFromLocalStorage();
+    let toPay = document.getElementById('pay');
+    if (check.checked) {
+        toPay.style.display = 'block';
+        toPay.textContent = `To pay: ${total + 300} RSD`;
+    } else {
+        toPay.style.display = 'none';
+    }
+}
+function expDelT(check) {
+    let total = getTotalFromLocalStorage();
+    let toPay = document.getElementById('pay');
+    if (check.checked) {
+        toPay.style.display = 'block';
+        toPay.textContent = `To pay: ${total + 400} RSD`;
+    } else {
+        toPay.style.display = 'none';
+    }
+}
 // regex for form elements
 
     const RegEx = {
@@ -63,59 +97,42 @@
         email: /^[a-zšđčćž\-.]{3,}[0-9]*@[a-zšđčćž]{3,}.[a-zšđčćž]{2,3}$/
     };
 
-    const formElements = {
+    const formData = {
 
     };
 
-    function getFormElement() {
-        formElements.form = document.getElementById('form');
-        formElements.tbody = formElements.form.querySelector('tbody');
-        for (tr of formElements.tbody.rows) {
+    function getFormData() {
+        formData.form = document.getElementById('form');
+        formData.tbody = formData.form.querySelector('tbody');
+        for (tr of formData.tbody.rows) {
             let input = tr.querySelector('input');
-            formElements[input.id] = input;
-        }
+            formData[input.id] = input;
+        } 
     }
-    function testInputReg(e) {
+    function testRegex(e) {
         let testReg = RegEx[e.target.id].test(e.target.value);
         if (!testReg) {
-            formElements[e.target.id].style.borderBottom = '2px solid red';
+            formData[e.target.id].style.borderBottom = '2px solid red';
         } else {
-            formElements[e.target.id].style.borderBottom = '2px solid blue';
+            formData[e.target.id].style.borderBottom = '2px solid blue';
         }
     }
     function registerInputEvent(e) {
-        formElements.form.addEventListener('input', testInputReg);
-    }
-// delivery
-    function userInput(e) {
-        const check = e.target;
-        switch (check.id) {
-            case 'express1': expDel(check);
-                break;
-            case 'express2': expDelT(check);
-                break;
-
-        }
+        formData.form.addEventListener('input', testRegex);
     }
 
-    function expDel(check) {
-        let total = getTotalFromLocalStorage();
-        let toPay = document.getElementById('pay');
-        if (check.checked) {
-            toPay.style.display = 'block';
-            toPay.textContent = `To pay: ${total + 300} RSD`;
-        } else {
-            toPay.style.display = 'none';
-        }
-    }
-    function expDelT(check) {
-        let total = getTotalFromLocalStorage();
-        let toPay = document.getElementById('pay');
-        if (check.checked) {
-            toPay.style.display = 'block';
-            toPay.textContent = `To pay: ${total + 400} RSD`;
-        } else {
-            toPay.style.display = 'none';
-        }
-    }
+
+btn.onclick = function () {
+  modal.style.display = 'block';
+};
+
+span.onclick = function () {
+  modal.style.display = 'none';
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
 })();
