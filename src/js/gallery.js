@@ -2,7 +2,7 @@ $(document).ready(function () {
 	function displayPhotos(data) {
 	var photoHTML = '';
 	$.each(data, function (i, photo) {
-		photoHTML += '<div class="picbox"><figure><img src="' + photo.url + '" class="frame"  onclick="expand(this)" ></figure></div>';
+		photoHTML += '<div class="picbox"><figure><img src="' + photo.url + '" alt="' + photo.name + '" class="frame"  onclick="expand(this)" ><figcaption>' + photo.name + '</figcaption></figure></div>';
 	});
 	$('#photos').html(photoHTML);
 	}
@@ -10,8 +10,8 @@ $(document).ready(function () {
   });
   function expand(imgs) {
   var expandImg = document.getElementById('expandedImg');
-  var imgex = document.getElementById('imgex');
+  var imgtext = document.getElementById('imgtext');
   expandImg.src = imgs.src;
-  imgex.innerHTML = imgs.alt;
+ imgtext.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = 'block';
   }
