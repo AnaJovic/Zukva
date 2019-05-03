@@ -1,8 +1,8 @@
 
 (function () {
     var modal = document.getElementById('myModal');
-    var btn = document.getElementById('submit');
-    var span = document.getElementsByClassName('close')[0];
+    var bttn = document.getElementById('submit');
+    var span = document.getElementsByClassName('exit')[0];
     const $shopCartCont = $('#cart-contentTable tbody'),
         delivery = $('#delivery');
   
@@ -116,17 +116,16 @@ function expDelT(check) {
     function testRegex(e) {
         let testReg = RegEx[e.target.id].test(e.target.value);
         if (!testReg) {
-            formData[e.target.id].style.borderBottom = '2px solid red';
+            formData[e.target.id].style.border = '2px solid red';
         } else {
-            formData[e.target.id].style.borderBottom = '2px solid blue';
+            formData[e.target.id].style.border = '2px solid blue';
         }
     }
     function registerInputEvent(e) {
         formData.form.addEventListener('input', testRegex);
     }
- 
-    let testObject = [];
 
+    let userInfo = [];
     const button = document.getElementById('submit');
     const firstName = document.getElementById('firstName');
     const lastName = document.getElementById('lastName');
@@ -137,8 +136,7 @@ function expDelT(check) {
     const email = document.getElementById('email');
   
     button.addEventListener('click', function (e) {
-        e.preventDefault();
-      testObject.push({
+      userInfo.push({
         firstName: firstName.value,
         lastName: lastName.value,
         address: address.value,
@@ -147,10 +145,10 @@ function expDelT(check) {
         phone: phone.value,
         email: email.value
       });
-      sessionStorage.setItem('testObject', JSON.stringify(testObject));
+      sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
     });
 
-btn.onclick = function () {
+bttn.onclick = function () {
   modal.style.display = 'block';
 };
 
@@ -158,8 +156,8 @@ span.onclick = function () {
   modal.style.display = 'none';
 };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
+window.onclick = function (e) {
+  if (e.target == modal) {
     modal.style.display = 'none';
   }
 };

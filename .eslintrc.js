@@ -49,6 +49,7 @@ module.exports = {
         "object-curly-newline":["error","always"],
         "no-plusplus":"off",
         "no-console":"off",
+        "no-useless-escape":"off",
         "arrow-parens":["error", "as-needed"],
         "space-infix-ops":"error",
         "no-unused-vars":"off",
