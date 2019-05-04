@@ -2,7 +2,7 @@ $(document).ready(function () {
 	function displayPhotos(data) {
 	var photoHTML = '';
 	$.each(data, function (i, photo) {
-		photoHTML += '<div class="picbox"><figure><img src="' + photo.url + '" alt="' + photo.name + '" class="frame"  onclick="expand(this)" ><figcaption>' + photo.name + '</figcaption></figure></div>';
+		photoHTML += '<div class="picbox"><figure><img src="' + photo.url + '" alt="' + photo.imgname + '" class="frame"  onclick="expand(this)" ><figcaption>' + photo.imgname + '</figcaption></figure></div>';
 	});
 	$('#photos').html(photoHTML);
 	}

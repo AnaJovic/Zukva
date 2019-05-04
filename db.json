@@ -2,107 +2,107 @@
   
     {
       "url": "./images/Gallery/njiva.jpg",
-      "name":"Njiva"
+      "imgname":"Naša Njiva"
     },
     
     {
       "url": "./images/Gallery/dekoracija.jpg",
-      "name":"Jesenji Plodovi"
+      "imgname":"Jesenji Plodovi"
     },
     {
       "url": "./images/Gallery/cvetsl.jpg",
-      "name":"Sljive u Cvatu"
+      "imgname":"Šljive u Cvatu"
      
     },
     {
       "url": "./images/Gallery/sljivar.jpg",
-      "name":"Sljivar"
+      "imgname":"Naš Šljivar"
      
     },
     {
       "url": "./images/Gallery/tor.jpg",
-      "name":"Tor i Kotobanja"
+      "imgname":"Tor i Kotobanja"
      
     },
   
     {
       "url": "./images/Gallery/zito.jpg",
-      "name":"Klasje"
+      "imgname":"Klasje"
      
     },
     {
       "url": "./images/Gallery/zeleno.jpg",
-      "name":"Prolece u Zukvi"
+      "imgname":"Proleće u Zukvi"
      
     },
   
     {
       "url": "./images/Gallery/visnjevaca.jpg",
-      "name":"Visnjevaca"
+      "imgname":"Višnjevača"
      
     },
     {
       "url": "./images/Gallery/tresnja.jpg",
-      "name":"Stara Tresnja"
+      "imgname":"Stara Trešnja"
      
     },
   
     {
       "url": "./images/Gallery/tor2.jpg",
-      "name":"Tor za Ovce"
+      "imgname":"Tor za Ovce"
      
     },
     {
       "url": "./images/Gallery/pasu.jpg",
-      "name":"Ovce u Sljivaru"
+      "imgname":"Ovce u Šljivaru"
      
     },
     {
       "url": "./images/Gallery/paradajz.jpg",
-      "name":"Domaci paradajz"
+      "imgname":"Domaći paradajz"
      
     },
   
     {
       "url": "./images/Gallery/ovce.jpg",
-      "name":"Ovce na Ispasi "
+      "imgname":"Ovce na Ispaši "
      
     },
     {
       "url": "./images/Gallery/muskat.jpg",
-      "name":"Muskatna Tikvica"
+      "imgname":"Muskatna Tikvica"
      
     },
     {
       "url": "./images/Gallery/sljiva.jpg",
-      "name":"Sljive"
+      "imgname":"Šljive"
      
     },
     {
       "url": "./images/Gallery/kukuruz.jpg",
-      "name":"Kukuruz"
+      "imgname":"Kukuruz"
      
     },
     {
       "url": "./images/Gallery/kuca.jpg",
-      "name":"Kuca i Basta"
+      "imgname":"Kuća i Bašta"
      
     },
     {
       "url": "./images/Gallery/golica.jpg",
-      "name":"Bundeva Golica"
+      "imgname":"Bundeva Golica"
      
     },
   
     {
       "url": "./images/Gallery/dunje.jpg",
-      "name":"Dunje"
+      "imgname":"Dunje"
      
     },
   
     {
       "url": "./images/Gallery/kruska.jpg",
-      "name":"Nase Kruske"
+      "imgname":"Naše Kruške"
      
     }
   ]}

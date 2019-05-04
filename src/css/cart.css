@@ -192,8 +192,7 @@ li a {
    font-weight: bold;
    cursor: pointer;
 }
-
-.close:hover, .close:focus {
+.exit:hover, .exit:focus {
    color: white;
    text-decoration: none;
    cursor: pointer;
