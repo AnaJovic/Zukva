@@ -28,6 +28,8 @@ const _api = axios.create({
     const prop = e.target.innerHTML;
     let id;
     switch (prop) {
+      case 'All': id = 0;
+      break;
       case 'Spreads': id = 1;
         break;
       case 'Jams': id = 2;
@@ -41,11 +43,16 @@ const _api = axios.create({
         case 'Vegetables': id = 6;
         break; 
     }
-    
+
     let response = await _api.get(`/product?prid=${id}`);
     let product = await response.data;
+    let responset = await _api.get(`/product?allid=${id}`);
+    let productt = await responset.data;
     $(`#catalog`).html('');
     for (const prod of product) {
+      _render(prod);
+    }
+    for (const prod of productt) {
       _render(prod);
     }
 });
