@@ -10,6 +10,7 @@
     -jQuery
     -Eslint
     -JSON
+    -Axios
  # Project structure
       Zukva
        src
