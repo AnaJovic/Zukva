@@ -1,108 +1,233 @@
-{"img":[
-  
+{
+  "img": [
     {
       "url": "./images/Gallery/njiva.jpg",
-      "imgname":"Naša Njiva"
+      "imgname": "Naša Njiva"
     },
-    
     {
       "url": "./images/Gallery/dekoracija.jpg",
-      "imgname":"Jesenji Plodovi"
+      "imgname": "Jesenji Plodovi"
     },
     {
       "url": "./images/Gallery/cvetsl.jpg",
-      "imgname":"Šljive u Cvatu"
-     
+      "imgname": "Šljive u Cvatu"
     },
     {
       "url": "./images/Gallery/sljivar.jpg",
-      "imgname":"Naš Šljivar"
-     
+      "imgname": "Naš Šljivar"
     },
     {
       "url": "./images/Gallery/tor.jpg",
-      "imgname":"Tor i Kotobanja"
-     
+      "imgname": "Tor za Ovce"
     },
-  
     {
       "url": "./images/Gallery/zito.jpg",
-      "imgname":"Klasje"
-     
+      "imgname": "Klasje"
     },
     {
       "url": "./images/Gallery/zeleno.jpg",
-      "imgname":"Proleće u Zukvi"
-     
+      "imgname": "Proleće u Zukvi"
     },
-  
     {
       "url": "./images/Gallery/visnjevaca.jpg",
-      "imgname":"Višnjevača"
-     
+      "imgname": "Višnjevača"
     },
     {
       "url": "./images/Gallery/tresnja.jpg",
-      "imgname":"Stara Trešnja"
-     
+      "imgname": "Stara Trešnja"
     },
-  
     {
       "url": "./images/Gallery/tor2.jpg",
-      "imgname":"Tor za Ovce"
-     
+      "imgname": "Tor i Kotobanja"
     },
     {
       "url": "./images/Gallery/pasu.jpg",
-      "imgname":"Ovce u Šljivaru"
-     
+      "imgname": "Ovce u Šljivaru"
     },
     {
       "url": "./images/Gallery/paradajz.jpg",
-      "imgname":"Domaći paradajz"
-     
+      "imgname": "Domaći paradajz"
     },
-  
     {
       "url": "./images/Gallery/ovce.jpg",
-      "imgname":"Ovce na Ispaši "
-     
+      "imgname": "Ovce na Ispaši "
     },
     {
       "url": "./images/Gallery/muskat.jpg",
-      "imgname":"Muskatna Tikvica"
-     
+      "imgname": "Muskatna Tikvica"
     },
     {
       "url": "./images/Gallery/sljiva.jpg",
-      "imgname":"Šljive"
-     
+      "imgname": "Šljive"
     },
     {
       "url": "./images/Gallery/kukuruz.jpg",
-      "imgname":"Kukuruz"
-     
+      "imgname": "Kukuruz"
     },
     {
       "url": "./images/Gallery/kuca.jpg",
-      "imgname":"Kuća i Bašta"
-     
+      "imgname": "Kuća i Bašta"
     },
     {
       "url": "./images/Gallery/golica.jpg",
-      "imgname":"Bundeva Golica"
-     
+      "imgname": "Bundeva Golica"
     },
-  
     {
       "url": "./images/Gallery/dunje.jpg",
-      "imgname":"Dunje"
-     
+      "imgname": "Dunje"
     },
-  
     {
       "url": "./images/Gallery/kruska.jpg",
-      "imgname":"Naše Kruške"
-     
+      "imgname": "Naše Kruške"
     }
-  ]}
+  ],
+  "product": [
+    {
+      "id": 1,
+      "prid":1,
+      "name": "Ajvar(400g)",
+      "url": "./images/Product/ajvar.jpg",
+      "price": "390"
+    },
+    {
+      "id": 2,
+      "prid":1,
+      "name": "Malidzano(400g)",
+      "url": "./images/Product/malidzano.jpg",
+      "price": "390"
+    },
+    {
+      "id": 3,
+      "prid":1,
+      "name": "Ajvar(200g)",
+      "url": "./images/Product/ajvar2.jpg",
+      "price": "300"
+    },
+    {
+      "id": 4,
+      "prid":3,
+      "name": "Feferoni(180g)",
+      "url": "./images/Product/feferoni.jpg",
+      "price": "400"
+    },
+    {
+      "id": 5,
+      "prid":3,
+      "name": "Kornišoni(500g)",
+      "url": "./images/Product/krastavcici.jpg",
+      "price": "290"
+    },
+    {
+      "id": 6,
+      "prid":2,
+      "name": "Dzem od Šljive(800g)",
+      "url": "./images/Product/sljivadz.jpg",
+      "price": "500"
+    },
+    {
+      "id": 7,
+      "prid":2,
+      "name": "Dzem od Šipka",
+      "url": "./images/Product/sipakdz.jpg",
+      "price": "550"
+    },
+    {
+      "id": 8,
+      "prid":4,
+      "name": "Sok od Paradajza(0.5l)",
+      "url": "./images/Product/sokpar.jpg",
+      "price": "500"
+    },
+    {
+      "id": 9,
+      "prid":4,
+      "name": "Sok od Višnje(1l)",
+      "url": "./images/Product/sokvis.jpg",
+      "price": "700"
+    },
+    {
+      "id": 10,
+      "prid":5,
+      "name": "Šljivovica(1l)",
+      "url": "./images/Product/sljivovica.jpg",
+      "price": "1400"
+    },
+    {
+      "id": 11,
+      "prid":5,
+      "name": "liker od Višnje(1l)",
+      "url": "./images/Product/visnjevaca.jpg",
+      "price": "1700"
+    },
+    {
+      "id": 12,
+      "prid":5,
+      "name": "Liker od Oraha(0.7l)",
+      "url": "./images/Product/orahovaca.jpg",
+      "price": "1500"
+    },
+    {
+      "id": 13,
+      "prid":6,
+      "name": "Beli Pasulj(200g)",
+      "url": "./images/Product/pasuljb.jpg",
+      "price": "120"
+    },
+    {
+      "id": 14,
+      "prid":6,
+      "name": "Crni Pasulj(100g)",
+      "url": "./images/Product/pasuljcrn.jpg",
+      "price": "200"
+    },
+    {
+      "id": 15,
+      "prid":6,
+      "name": "Crveni Pasulj(100g)",
+      "url": "./images/Product/pasuljc.jpg",
+      "price": "220"
+    },
+    {
+      "id": 16,
+      "prid":6,
+      "name": "Žuti Pasulj(200g)",
+      "url": "./images/Product/pasuljz.jpg",
+      "price": "190"
+    },
+    {
+      "id": 17,
+      "prid":6,
+      "name": "Šareni Pasulj(200g)",
+      "url": "./images/Product/pasuljs.jpg",
+      "price": "175"
+    },
+    {
+      "id": 18,
+      "prid":6,
+      "name": "Cacarica(100g)",
+      "url": "./images/Product/cacarica.jpg",
+      "price": "280"
+    },
+    {
+      "id": 19,
+      "prid":6,
+      "name": "Crni Luk(seme)",
+      "url": "./images/Product/lukcrn.jpg",
+      "price": "240"
+    },
+    {
+      "id": 20,
+      "prid":6,
+      "name": "Crveni Luk(seme) ",
+      "url": "./images/Product/lukcrven.jpg",
+      "price": "250"
+    },
+    {
+      "id": 21,
+      "prid":6,
+      "name": "Beli Luk(seme)",
+      "url": "./images/Product/lukbeo.jpg",
+      "price": "270"
+    }
+  ]
+}

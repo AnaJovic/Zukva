@@ -1,65 +1,52 @@
-let product = (function () {
-        const arr = [];
-       let $catalog = $('#catalog');
-       class Product {
-         constructor(info,name, price, quantity, img) {
-               this.name = name,
-                   this.price = price,
-                   this.quantity = quantity,
-                this.img = img;
-                   this.info = info;
-           }
+
+const _api = axios.create({
+    baseURL: `http://localhost:3000`
+  });
+  
+  async function displayProduct() {
+    let response = await _api.get(`/product`);
+    let product = await response.data;
+    for (const prod of product) {
+      _render(prod);
     }
-       function addProduct(info,name, price, quantity, img) {
-           const product = new Product(info,name, price, quantity, img);
-           arr.push(product);
-           createProduct();
-       }
-       function createProduct() {
-           $catalog.html('');
-           arr.forEach(function (element) {
-               const {
-                info, img, name, price
-                } = element;
-             let $products = $(` 
-               <div class = 'product bradius'>
-                              <img src = ${img} alt='${name}-img' class = 'imgprod'>
-                              <div class="infoh"><i class="fa fa-info-circle fa-lg pinfo" aria-hidden="true"></i><h3 data=${info}>${name}</h3></div>
-                              <div>price<input type = 'text' class = 'productPrice' value = '${price}' readonly></div>
-                                 <div>quantity: <input type = 'number' class = 'productQuantity bradius' min = '0'></div>
-                              <div>total price: <input type = 'number' class = 'productSum bradius' readonly></div>
-                              <button type = 'submit' class = 'buy-prod bradius'>Buy</button>
-                             </div>`);
-               $products.appendTo($catalog);
-        });
+  }
+  
+
+  async function _render(prod) {
+    $(`#catalog`).append(`<div class = 'product bradius'>
+    <img src = ${prod.url} alt='' class = 'imgprod'>
+    <div><h3>${prod.name}</h3></div>
+    <div>price<input type = 'text' class = 'productPrice' value = '${prod.price}' readonly></div>
+    <div>quantity: <input type = 'number' class = 'productQuantity bradius' min = '0'></div>
+    <div>total price: <input type = 'number' class = 'productSum bradius' readonly></div>
+    <button type = 'submit' class = 'buy-prod bradius'>Buy</button>
+</div>`);
+  }
+  displayProduct();
+  $('#prod-list').click(async (e) => {
+    const prop = e.target.innerHTML;
+    let id;
+    switch (prop) {
+      case 'Spreads': id = 1;
+        break;
+      case 'Jams': id = 2;
+        break;
+      case 'Pickle': id = 3;
+        break;
+      case 'Juices': id = 4;
+        break; 
+        case 'Alcohol': id = 5;
+        break; 
+        case 'Vegetables': id = 6;
+        break; 
     }
-    function modalActive(e) {
-     if (e.target.classList.contains('pinfo')) {
-         const parentDiv = e.target.parentElement.parentElement;
-         const name = parentDiv.querySelector('h3').textContent;
-         const info = parentDiv.querySelector('h3').getAttribute('data');  
-         $('#id01').append(`<div class="modal-content animate">
-             <div class="containert">
-         <h2>Product info</h2>
-            <p>${info}</p>
-             </div>`);
-         $('#id01').css({
-             display: 'block', width: '100%'
-            }); 
-                    } 
-                }
-                let modal = document.getElementById('id01');
-         window.onclick = function (event) {
-         if (event.target == modal) {
-             modal.style.display = 'none';
-             $('#id01').html('');
-         }
- };
-       $('#catalog').click(modalActive);
-    
-    return {
-        addProduct
-    };
+    let response = await _api.get(`/product?prid=${id}`);
+    let product = await response.data;
+    $(`#catalog`).html('');
+    for (const prod of product) {
+      _render(prod);
     }
-    )();
-     export default product;
+});
+  export {
+      _render, displayProduct, _api
+  }; 
