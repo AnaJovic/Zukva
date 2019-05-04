@@ -23,6 +23,7 @@ const _api = axios.create({
 </div>`);
   }
   displayProduct();
+
   $('#prod-list').click(async (e) => {
     const prop = e.target.innerHTML;
     let id;
@@ -40,6 +41,7 @@ const _api = axios.create({
         case 'Vegetables': id = 6;
         break; 
     }
+    
     let response = await _api.get(`/product?prid=${id}`);
     let product = await response.data;
     $(`#catalog`).html('');
