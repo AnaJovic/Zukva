@@ -12,7 +12,6 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 }
-
 h1{
 	font-family: 'ZCOOL KuaiLe', cursive;
 	margin-top: 50px;
@@ -117,7 +116,7 @@ p {
 	padding: 1em;
 }
 .imga {
-	padding: 15px
+	padding: 15px;
 }
 .bradius {
 	border-radius: 4px
@@ -145,7 +144,7 @@ nav {
 	margin-right: 0px;
 }
 .menu a {
-	color: #777;
+	color: rgb(104, 94, 94);
 	transition: color linear 0.15s;
 	text-decoration: none;
 }
@@ -265,10 +264,6 @@ h3 {
 	background-color: #1a1212;
 	color:#66a992
 }
-#prod-container{
-	display: flex;
-	flex-direction: row
-}
 #prod-list{
 	display: flex;
 	flex-direction: row;
@@ -299,6 +294,8 @@ a {
 #total {
 	display: inline-block;
 	margin-left: 2em;
+	color: #66a992;
+	font-size: 16px
 }
 #shopgo {
 	display: flex;
@@ -354,12 +351,9 @@ th {
 	height: 36px;
 	padding: 0 30px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 36px;
-	text-transform: uppercase;
-	text-decoration: none;
-	white-space: nowrap;
-	background-color: transparent;
+	white-space: nowrap; 
 	border: 1px solid #303030;
 	cursor: pointer;
 }
@@ -401,7 +395,6 @@ footer {
 	.imga {
 		width: 100%;
 		height: 300px;
-		border-radius: 2px;
 	}
 	.map {
 		width: 500px;
@@ -419,19 +412,15 @@ footer {
 		height: 150px;
 	}
 	#catalog {
-		display: flex;
 		width: 90%;
-		margin: auto;
-		justify-content: space-around;
 	}
 	.product {
 		max-width: 250px;
 	}
 	.imga {
-		width: 100% !important;
-		min-width: 400px !important;
-		height: 300px !important;
-		border-radius: 2px;
+		width: 100%;
+		min-width: 400px;
+		height: 300px;
 	}
 	.map {
 		width: 400px;
@@ -508,10 +497,7 @@ footer {
 		color: #66a992;
 	}
 	#catalog {
-		display: flex;
 		width: 90%;
-		margin: auto;
-		justify-content: space-evenly;
 	}
 	.product {
 		max-width: 250px;
@@ -529,7 +515,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
 	body {
-		font-size: 12px;
+		font-size: 13px;
 	}
 	#top{
 		width: 30px;
@@ -604,10 +590,9 @@ footer {
 		font-size: 20px;
 	}
 	.imga {
-		width: 100% !important;
-		min-width: 400px !important;
-		height: 300px !important;
-		border-radius: 2px;
+		width: 100% ;
+		min-width: 400px;
+		height: 300px;
 	}
 	#photos {
 		overflow-y: scroll;
@@ -628,10 +613,7 @@ footer {
 		font-size: 30px;	
 	}
 	#catalog {
-		display: flex;
 		width: 100%;
-		margin: auto;
-		justify-content: space-around;
 	}
 	.product {
 		width: 100%;
@@ -651,14 +633,10 @@ footer {
 		display: flex;
 		justify-content: center
 	}
-	#shopgo {
-		display: flex;
-		justify-content: center;
-	}
-	.button {
+	 .button {
 		display: flex !important;
 		justify-content: center !important;
-	}
+	} 
 }
 
 
