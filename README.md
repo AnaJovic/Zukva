@@ -21,7 +21,6 @@ Cart page contains order informations. You can pick who will deliver you your's 
  # Project structure
       Zukva
        src
-       eslintrc.js
          css
            cart.css
            main.css
@@ -37,7 +36,8 @@ Cart page contains order informations. You can pick who will deliver you your's 
            order.js
            shop.js
           cart.html   
-          index.html 
+          index.html
+         eslintrc.js  
          db.json
          package-lock.json
          package.json 
