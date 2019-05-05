@@ -1,9 +1,10 @@
 # Zukva - website
 
-## Website for a family farm Zukva. 
-    The site contains information about us, where you can find us, photo gallery and a store with our products.
+### Website for a family farm Zukva. 
+    The site contains information about us, where you can find us, photo gallery and a shop where you can buy our products.
+
 ### Index page
-Index page contains information about us, Gallery, Shop and Contact info.
+Index page contains information about us, Gallery, Shop and Contact info. When you press buy on product they are sent in storage and from there to cart. In navbar on cart icon you can see what is orderd and if you wish delete items on X or by pressing empty Cart button. By pressing Go To Shop button you are sent on Cart.html page
 
 ### Cart page
 Cart page contains order informations. You can pick who will deliver you your's products and give your contact info. All informations are on submit send on our server.
@@ -16,7 +17,7 @@ Cart page contains order informations. You can pick who will deliver you your's 
     -jQuery
     -JSON-server
     -Axios
-    
+
  # Project structure
       Zukva
        src
