@@ -101,7 +101,14 @@ input{
    line-height: 38px;
    text-decoration: none;
    border: 1px solid black;
+   font-weight: bold;
    cursor: pointer;
+}
+.button:active{
+   transform: translateY(2px);
+}
+.button:hover{
+   background-color: rgb(101, 116, 68)
 }
 #delivery div {
    margin:auto;

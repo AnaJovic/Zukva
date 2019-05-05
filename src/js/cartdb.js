@@ -9,7 +9,7 @@ const dataBase = (function () {
                 'Content-Type': 'aplication/json'
             };
             response = await _dataB.post('/users', user, header);
-            let res = await response.data;
+            let resp = await response.data;
         } catch (e) {
             console.log(e);
         }
