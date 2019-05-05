@@ -88,7 +88,7 @@
       "allid": 0,
       "name": "Ajvar(400g)",
       "url": "./images/Product/ajvar.jpg",
-      "price": "390"
+      "price": "500"
     },
     {
       "id": 2,
@@ -96,7 +96,7 @@
       "allid": 0,
       "name": "Malidzano(400g)",
       "url": "./images/Product/malidzano.jpg",
-      "price": "390"
+      "price": "490"
     },
     {
       "id": 3,
@@ -104,7 +104,7 @@
       "allid": 0,
       "name": "Ajvar(200g)",
       "url": "./images/Product/ajvar2.jpg",
-      "price": "300"
+      "price": "390"
     },
     {
       "id": 4,
@@ -112,7 +112,7 @@
       "allid": 0,
       "name": "Feferoni(180g)",
       "url": "./images/Product/feferoni.jpg",
-      "price": "400"
+      "price": "280"
     },
     {
       "id": 5,
@@ -120,7 +120,7 @@
       "allid": 0,
       "name": "Kornišoni(500g)",
       "url": "./images/Product/krastavcici.jpg",
-      "price": "290"
+      "price": "300"
     },
     {
       "id": 6,
@@ -128,7 +128,7 @@
       "allid": 0,
       "name": "Dzem od Šljive(800g)",
       "url": "./images/Product/sljivadz.jpg",
-      "price": "500"
+      "price": "450"
     },
     {
       "id": 7,
@@ -136,7 +136,7 @@
       "allid": 0,
       "name": "Dzem od Šipka",
       "url": "./images/Product/sipakdz.jpg",
-      "price": "550"
+      "price": "600"
     },
     {
       "id": 8,
@@ -144,7 +144,7 @@
       "allid": 0,
       "name": "Sok od Paradajza(0.5l)",
       "url": "./images/Product/sokpar.jpg",
-      "price": "500"
+      "price": "340"
     },
     {
       "id": 9,
@@ -184,7 +184,7 @@
       "allid": 0,
       "name": "Beli Pasulj(200g)",
       "url": "./images/Product/pasuljb.jpg",
-      "price": "120"
+      "price": "90"
     },
     {
       "id": 14,
@@ -192,7 +192,7 @@
       "allid": 0,
       "name": "Crni Pasulj(100g)",
       "url": "./images/Product/pasuljcrn.jpg",
-      "price": "200"
+      "price": "60"
     },
     {
       "id": 15,
@@ -200,7 +200,7 @@
       "allid": 0,
       "name": "Crveni Pasulj(100g)",
       "url": "./images/Product/pasuljc.jpg",
-      "price": "220"
+      "price": "60"
     },
     {
       "id": 16,
@@ -208,7 +208,7 @@
       "allid": 0,
       "name": "Žuti Pasulj(200g)",
       "url": "./images/Product/pasuljz.jpg",
-      "price": "190"
+      "price": "90"
     },
     {
       "id": 17,
@@ -216,7 +216,7 @@
       "allid": 0,
       "name": "Šareni Pasulj(200g)",
       "url": "./images/Product/pasuljs.jpg",
-      "price": "175"
+      "price": "90"
     },
     {
       "id": 18,
@@ -224,7 +224,7 @@
       "allid": 0,
       "name": "Cacarica(100g)",
       "url": "./images/Product/cacarica.jpg",
-      "price": "280"
+      "price": "70"
     },
     {
       "id": 19,
@@ -232,7 +232,7 @@
       "allid": 0,
       "name": "Crni Luk(seme)",
       "url": "./images/Product/lukcrn.jpg",
-      "price": "240"
+      "price": "160"
     },
     {
       "id": 20,
@@ -240,7 +240,7 @@
       "allid": 0,
       "name": "Crveni Luk(seme) ",
       "url": "./images/Product/lukcrven.jpg",
-      "price": "250"
+      "price": "170"
     },
     {
       "id": 21,
@@ -248,7 +248,7 @@
       "allid": 0,
       "name": "Beli Luk(seme)",
       "url": "./images/Product/lukbeo.jpg",
-      "price": "270"
+      "price": "190"
     }
   ],
   "users": [
