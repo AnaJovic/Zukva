@@ -1,6 +1,12 @@
 # Zukva - website
 
-### Website for a family farm. With shop
+## Website for a family farm Zukva. 
+    The site contains information about us, where you can find us, photo gallery and a store with our products.
+### Index page
+Index page contains information about us, Gallery, Shop and Contact info.
+
+### Cart page
+Cart page contains order informations. You can pick who will deliver you your's products and give your contact info. All informations are on submit send on our server.
 
 # Used techniques
     -HTML
@@ -8,12 +14,13 @@
     -Java Script
     -npm
     -jQuery
-    -Eslint
-    -JSON
+    -JSON-server
     -Axios
+    
  # Project structure
       Zukva
        src
+       eslintrc.js
          css
            cart.css
            main.css
@@ -22,12 +29,17 @@
             Product
          js
            cart.js
+           cartdb.js
            gallery.js
            index.js
            main.js
+           order.js
            shop.js
-        cart.html   
-        index.html  
+          cart.html   
+          index.html 
+         db.json
+         package-lock.json
+         package.json 
        
     
  # Validation

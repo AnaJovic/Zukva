@@ -10,13 +10,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="./css/cart.css">
     <script src="./js/cart.js" defer></script>
+    <script src="./js/order.js" defer></script>
+    <script src="./js/cartdb.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Cart</title>
-   
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <title>Zukva Cart</title>
 
 </head>
-
 <body>
     <nav>
         <ul>
@@ -48,7 +48,7 @@
     <span id="total"></span>
     <div id="delivery">
            
-                <h4>Delivery</h4>
+                <h4 id="deli">Delivery</h4>
                 <input type="radio" name="delivery" value="Express Delivery" id="express1" class="radio">
                 <label>300 RSD PostExpres</label><br><br>
                 <input type="radio" name="delivery" value="Express Delivery" id="express2" class="radio">
@@ -109,16 +109,15 @@
         </table>
     </form>
     <div>
-            <a href="#" class="button bradius" id="submit">Submit</a>
+            <a href="#" class="button bradius" id="submit" >Submit</a>
         </div>
 </div>
 
 <div id="myModal" class="modal">
     <div class="modal-container bradius">
-        <span class="exit">&#10006;</span>
-        <p>Your order is recived.</p><br>
-        <p>thank you</p><br>
-      <input type="button" id="modbtn" class="bradius" value="Back to Home" onclick="location.href = 'index.html'">
+        <p>We are currently processing your order.</p><br>
+        <p>Thank you!</p><br>
+   <button type="submit" id="modbtn" class="bradius" onclick="users.submitUser()" onmouseup="this.parentElement.parentElement.style.display='none'">Done</button>
       </div>
     </div> 
 </main>

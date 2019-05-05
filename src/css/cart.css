@@ -165,18 +165,6 @@ li a {
    background-color: rgb(78, 129, 129);
    color: whitesmoke
 }
-.exit {
-   color: black;
-   float: right;
-   font-size: 20px;
-   font-weight: bold;
-   cursor: pointer;
-}
-.exit:hover, .exit:focus {
-   color: white;
-   text-decoration: none;
-   cursor: pointer;
-}
 @media screen and (max-width: 1000px) {
    main {
       display: flex;

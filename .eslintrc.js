@@ -62,8 +62,8 @@ module.exports = {
         "brace-style":"error",
         "prefer-template":"off",
         "max-len":"off",
-        "consistent-return":"off"
-
+        "consistent-return":"off",
+        "object-shorthand":"off"
     }
         
 };

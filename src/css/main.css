@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe|Cormorant+Unicase:500|Just+Another+Hand|Lato:300');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe|Cormorant+Unicase:500|Lato:300');
 * {
 	margin: 0;
 	padding: 0;
@@ -12,13 +12,13 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 }
-h1{
+h1 {
 	font-family: 'ZCOOL KuaiLe', cursive;
 	margin-top: 50px;
 	color: rgb(66, 61, 61);
 	font-size: 130px;
 }
-h2{
+h2 {
 	text-align: center;
 	font-family: 'Cormorant Unicase', serif;
 }
@@ -101,7 +101,7 @@ i {
 	justify-content: space-around;
 	padding: 10px;
 }
-.map{
+.map {
 	height: 300px;
 }
 .info ul li {
@@ -169,19 +169,19 @@ figcaption {
 	font-size: 10px;
 	line-height: 1.5;
 	color: white;
-	background:  rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.5);
 	bottom: 0;
 	position: absolute;
 	width: 100%;
-    text-align: center;
-	margin-bottom: 5px;	
-  }
+	text-align: center;
+	margin-bottom: 5px;
+}
 img.frame {
 	width: 90px;
 	height: 90px;
 	padding: 1px;
 	border: 1px solid gray;
-} 
+}
 #expandedImg {
 	width: 100%;
 	height: 100%;
@@ -198,7 +198,7 @@ img.frame {
 	font-size: 28px;
 	font-weight: bold;
 	padding-left: 20px
-  }
+}
 .contain {
 	position: relative;
 	display: none;
@@ -255,26 +255,25 @@ h3 {
 	width: 80%;
 }
 .product>button:active {
-	background-color: #303030;
 	transform: translateY(2px);
 	color: #66a992;
 	outline-color: #303030;
 }
-.product>button:hover{
+.product>button:hover {
 	background-color: #1a1212;
-	color:#66a992
+	color: #66a992
 }
-#prod-list{
+#prod-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	font-size: 18px;
 }
-#prod-list a{
-font-weight: bold;
+#prod-list a {
+	font-weight: bold;
 	color: black;
 }
-#prod-list a:hover{
+#prod-list a:hover {
 	text-decoration: none;
 	color: #66a992
 }
@@ -304,10 +303,10 @@ a {
 	background-color: #303030;
 	color: white;
 }
-#shopgo:hover{
+#shopgo:hover {
 	color: #66a992
 }
-#shopgo:active{
+#shopgo:active {
 	transform: translateY(2px);
 }
 .submenu {
@@ -353,7 +352,7 @@ th {
 	text-align: center;
 	font-size: 14px;
 	line-height: 36px;
-	white-space: nowrap; 
+	white-space: nowrap;
 	border: 1px solid #303030;
 	cursor: pointer;
 }
@@ -430,7 +429,6 @@ footer {
 	.menu {
 		width: 100%;
 		padding: 10px 18px;
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
 		background: #303030;
 	}
 }
@@ -453,8 +451,6 @@ footer {
 		top: 100%;
 		left: 0px;
 		padding: 10px 18px;
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-		border-radius: 3px;
 		background: #303030;
 	}
 	.menu ul:after {
@@ -465,9 +461,7 @@ footer {
 		left: 22px;
 		content: '';
 		transform: translate(0%, -100%);
-		border-left: 7px solid transparent;
-		border-right: 7px solid transparent;
-		border-bottom: 7px solid #303030;
+	
 	}
 	.menu li {
 		margin: 5px 0px 5px 0px;
@@ -484,13 +478,10 @@ footer {
 		padding: 20px;
 		display: flex;
 		justify-content: flex-end;
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
 		border-radius: 3px;
 		background: #303030;
-		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
 		color: #777;
 		font-size: 20px;
-		transition: color linear 0.15s;
 	}
 	.toggle-nav:hover, .toggle-nav.active {
 		text-decoration: none;
@@ -506,7 +497,6 @@ footer {
 		display: flex !important;
 		justify-content: center !important;
 	}
-
 }
 @media (min-width: 768px) {
 	.picbox {
@@ -517,7 +507,7 @@ footer {
 	body {
 		font-size: 13px;
 	}
-	#top{
+	#top {
 		width: 30px;
 		font-size: 20px
 	}
@@ -536,8 +526,6 @@ footer {
 		top: 100%;
 		left: 0px;
 		padding: 10px 18px;
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-		border-radius: 3px;
 		background: #303030;
 	}
 	.menu ul:after {
@@ -548,9 +536,6 @@ footer {
 		left: 22px;
 		content: '';
 		transform: translate(0%, -100%);
-		border-left: 7px solid transparent;
-		border-right: 7px solid transparent;
-		border-bottom: 7px solid #303030;
 	}
 	.menu li {
 		margin: 5px 0px 5px 0px;
@@ -567,13 +552,10 @@ footer {
 		padding: 20px;
 		display: flex;
 		justify-content: flex-end;
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
 		border-radius: 3px;
 		background: #303030;
-		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
 		color: #777;
 		font-size: 24px;
-		transition: color linear 0.15s;
 	}
 	.toggle-nav:hover, .toggle-nav.active {
 		text-decoration: none;
@@ -590,7 +572,7 @@ footer {
 		font-size: 20px;
 	}
 	.imga {
-		width: 100% ;
+		width: 100%;
 		min-width: 400px;
 		height: 300px;
 	}
@@ -605,12 +587,12 @@ footer {
 		width: 80px;
 		height: 80px;
 	}
-	#imgtext{
+	#imgtext {
 		width: 30%;
 		font-size: 16px
 	}
 	.closebtn {
-		font-size: 30px;	
+		font-size: 30px;
 	}
 	#catalog {
 		width: 100%;
@@ -633,11 +615,8 @@ footer {
 		display: flex;
 		justify-content: center
 	}
-	 .button {
+	.button {
 		display: flex !important;
 		justify-content: center !important;
-	} 
+	}
 }
-
-
-
