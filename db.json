@@ -160,7 +160,7 @@
       "allid": 0,
       "name": "Šljivovica(1l)",
       "url": "./images/Product/sljivovica.jpg",
-      "price": "1400"
+      "price": "2399"
     },
     {
       "id": 11,
@@ -168,7 +168,7 @@
       "allid": 0,
       "name": "liker od Višnje(1l)",
       "url": "./images/Product/visnjevaca.jpg",
-      "price": "1700"
+      "price": "2499"
     },
     {
       "id": 12,
@@ -176,7 +176,7 @@
       "allid": 0,
       "name": "Liker od Oraha(0.7l)",
       "url": "./images/Product/orahovaca.jpg",
-      "price": "1500"
+      "price": "2149"
     },
     {
       "id": 13,
