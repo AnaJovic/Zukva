@@ -4,7 +4,6 @@ const users = (function () {
         const lastName = document.getElementById('lastName').value;
         const address = document.getElementById('address').value;
         const city = document.getElementById('city').value;
-        const postalCode = document.getElementById('postalCode').value;
         const phone = document.getElementById('phone').value;
         const email = document.getElementById('email').value;
         const total = JSON.parse(sessionStorage.getItem('total'));
@@ -16,7 +15,6 @@ const users = (function () {
             lastName: lastName,
             address: address,
             city: city,
-            postalCode: postalCode,
             phone: phone,
             email: email,
             total: total,

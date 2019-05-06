@@ -65,60 +65,55 @@
            
          
 <div id="user-data" class="bradius">
+   
     <form method="post" id="form">
+            <fieldset class="bradius">
+                    <legend>Contact Info</legend>
         <table>
-            <thead>
-                <tr>
-                    <th>Contact Info</th>
-                    <td></td>
-                </tr>
-            </thead>
             <tr>
                 <td>First Name:</td>
-                <td><input type="text" id="firstName" name="firstName" class="bradius" placeholder="Name">
+                <td><input type="text" id="firstName" name="firstName" class="bradius" placeholder="Name" required>
                 </td>
             </tr>
             <tr>
                 <td>Last Name:</td>
-                <td><input type="text" id="lastName" name="lastName" class="bradius" placeholder="Surname">
+                <td><input type="text" id="lastName" name="lastName" class="bradius" placeholder="Last Name" required>
                 </td>
             </tr>
             <tr>
                 <td>Address:</td>
-                <td><input type="text" id="address" name="address" class="bradius" placeholder="Address">
+                <td><input type="text" id="address" name="address" class="bradius" placeholder="Address" required>
                 </td>
             </tr>
             <tr>
                 <td>City:</td>
-                <td><input type="text" id="city" name="city" class="bradius" placeholder="City">
-                </td>
-            </tr>
-            <tr>
-                <td>Postal Code:</td>
-                <td><input type="text" id="postalCode" name="postalCode" class="bradius" placeholder="12345">
+                <td><input type="text" id="city" name="city" class="bradius" placeholder="City" required>
                 </td>
             </tr>
             <tr>
                 <td>Telephone:</td>
-                <td><input type="text" id="phone" name="phone" class="bradius" placeholder="06*/****-***">
+                <td><input type="tel" id="phone" name="phone" class="bradius" placeholder="06*/****-***" required>
                 </td>
             </tr>
             <tr>
                 <td>E-mail:</td>
-                <td><input type="email" id="email" class="bradius" name="email">
+                <td><input type="email" id="email" class="bradius" name="email" placeholder="me@mail.com">
                 </td>
             </tr>
         </table>
+    </fieldset>
     </form>
     <div>
             <a href="#" class="button bradius" id="submit" >Submit</a>
         </div>
+  
 </div>
 
 <div id="myModal" class="modal">
     <div class="modal-container bradius">
         <p>We are currently processing your order.</p><br>
         <p>Thank you!</p><br>
+        <p>Press Done to continue</p><br>
    <button type="submit" id="modbtn" class="bradius" onclick="users.submitUser()" onmouseup="this.parentElement.parentElement.style.display='none'">Done</button>
       </div>
     </div> 

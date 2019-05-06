@@ -20,11 +20,12 @@ header {
 h1 {
    display: flex;
    justify-content: center;
-   font-size: 150px;
+   font-size: 130px;
    color: rgb(104, 94, 94);
    text-align: center;
    font-family: 'ZCOOL KuaiLe', cursive;
-   margin-top: 50px
+   margin-top: 50px;
+   text-shadow: #1a1212 5px 5px 5px;
 }
 main {
    margin: 20px;
@@ -58,7 +59,6 @@ table {
 th, td {
    padding: 12px 10px;
    text-align: center;
-   border-bottom: 1px solid rgb(39, 37, 37);
 }
 #total {
    font-weight: bold;
@@ -73,10 +73,12 @@ th, td {
 input{
    outline:none
 }
+legend{
+   font-size: 24px;
+}
 #user-data {
    width: 100%;
-   max-width: 400px;
-   background-color: #303030;
+   max-width: 300px;
    height: 100%;
    margin-top: 20px
 }
@@ -88,11 +90,10 @@ input{
    width: 200px;
 }
 .button {
-   width: 85%;
+   width: 50%;
    background-color: rgb(60, 71, 37);
    color: white;
-   margin: 5%;
-   margin-bottom: 1rem;
+   margin: 5px 0 1rem 25%;
    display: inline-block;
    height: 38px;
    padding: 0 30px;
@@ -156,7 +157,7 @@ li a {
    padding: 20px;
    border: 1px solid black;
    width: 400px;
-   height: 200px;
+   height: 250px;
    text-align: center;
    font-size: 20px;
    color: white

@@ -10,7 +10,7 @@
 // scroll arrow
 $(window).scroll(function () {
     var height = $(window).scrollTop();
-    if (height > 50) {
+    if (height > 60) {
         $('#top').fadeIn();
         $('#scroll').fadeOut();
     } else {
@@ -42,6 +42,7 @@ let main = (function () {
 				quantity.value = '';
 				e.target.parentElement.querySelector('.productSum').value = '';
 			} else {
+				quantity.style.border = '1px solid grey';
 				getProduct(product);
 			}
 		}
@@ -60,10 +61,9 @@ let main = (function () {
 	}
 
 	function calculateTotal(e) {
-		let quantity = parseInt(e.target.value),
+		let quantity = parseInt(e.target.parentElement.parentElement.querySelector('.productQuantity').value),
 			price = parseInt(e.target.parentElement.parentElement.querySelector('.productPrice').value),
 			productSum = e.target.parentElement.parentElement.querySelector('.productSum');
-		e.target.style.border = '1px solid grey';
 		productSum.value = price * quantity;
 	}
 

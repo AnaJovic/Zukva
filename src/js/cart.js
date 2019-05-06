@@ -91,7 +91,6 @@
         lastName: /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,11}\s?([A-ZŠĐŽĆČ][a-zšđčćž]{1,11})?$/,
         address: /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,20}\s?([A-ZŠĐŽĆČa-zšđčćž][a-zšđčćž]{1,11})?\s\d{1,3}$/,
         city: /^[A-ZŠĐŽĆČ][a-zšđčćž]{1,20}\s?([A-ZŠĐŽĆČa-zšđčćž][a-zšđčćž]{1,11})?\s?([A-ZŠĐŽĆČa-zšđčćž][a-zšđčćž]{1,11})?$/,
-        postalCode: /^[1-9]\d{4}$/,
         phone: /^\d{3}\/(\d{3}-?\d{4}|\d{4}-?\d{3})$/,
         email: /^[a-zšđčćž\-.]{3,}[0-9]*@[a-zšđčćž]{3,}.[a-zšđčćž]{2,3}$/
     };
@@ -124,7 +123,6 @@
     const lastName = document.getElementById('lastName');
     const address = document.getElementById('address');
     const city = document.getElementById('city');
-    const postalCode = document.getElementById('postalCode');
     const phone = document.getElementById('phone');
     const email = document.getElementById('email');
 
@@ -134,7 +132,6 @@
             lastName: lastName.value,
             address: address.value,
             city: city.value,
-            postalCode: postalCode.value,
             phone: phone.value,
             email: email.value
         });
