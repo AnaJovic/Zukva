@@ -44,8 +44,9 @@ Cart page contains order informations. You can pick who will deliver you your's 
        
     
  # Validation
- -https://validator.w3.org/
+ -https://validator.w3.org/ HTML and CSS validation no errors
+ -JS no Console errors
 
 ## Initializing the project
-After checking out project `npm install` command should be run. For running the server `npm run server` command should be run.
+After checking out project `npm install` command should be run. Install Json server `npm i json-server`. For running the server `npm run server` command should be run.
 
