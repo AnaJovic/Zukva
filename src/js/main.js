@@ -60,13 +60,6 @@ let main = (function () {
 		addToCart(productInfo);
 	}
 
-	function calculateTotal(e) {
-		let quantity = parseInt(e.target.parentElement.parentElement.querySelector('.productQuantity').value),
-			price = parseInt(e.target.parentElement.parentElement.querySelector('.productPrice').value),
-			productSum = e.target.parentElement.parentElement.querySelector('.productSum');
-		productSum.value = price * quantity;
-	}
-
 	function addToCart(product) {
 		const row = $('<tr></tr>');
 		const { 
@@ -86,6 +79,13 @@ let main = (function () {
 
 		row.appendTo($shopCart);
 		saveToStorage(product);
+	}
+
+	function calculateTotal(e) {
+		let quantity = parseInt(e.target.parentElement.parentElement.querySelector('.productQuantity').value),
+			price = parseInt(e.target.parentElement.parentElement.querySelector('.productPrice').value),
+			productSum = e.target.parentElement.parentElement.querySelector('.productSum');
+		productSum.value = price * quantity;
 	}
 
 	function saveTotalInStorage(product) {

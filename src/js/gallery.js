@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	function displayPhotos(data) {
 	var photoShow = '';
-	$.each(data, function (e, photo) {
+	$.each(data, function (i, photo) {
 		photoShow += '<div class="picbox"><figure><img src="' + photo.url + '" alt="' + photo.imgname + '" class="frame"  onclick="expandImage(this)" ><figcaption>' + photo.imgname + '</figcaption></figure></div>';
 	});
 	$('#photos').html(photoShow);
