@@ -1,17 +1,17 @@
 $(document).ready(function () {
 	function displayPhotos(data) {
-	var photoHTML = '';
-	$.each(data, function (i, photo) {
-		photoHTML += '<div class="picbox"><figure><img src="' + photo.url + '" alt="' + photo.imgname + '" class="frame"  onclick="expand(this)" ><figcaption>' + photo.imgname + '</figcaption></figure></div>';
+	var photoShow = '';
+	$.each(data, function (e, photo) {
+		photoShow += '<div class="picbox"><figure><img src="' + photo.url + '" alt="' + photo.imgname + '" class="frame"  onclick="expandImage(this)" ><figcaption>' + photo.imgname + '</figcaption></figure></div>';
 	});
-	$('#photos').html(photoHTML);
+	$('#photos').html(photoShow);
 	}
 	$.getJSON('http://localhost:3000/img', displayPhotos);
   });
-  function expand(imgs) {
+  function expandImage(imgs) {
   var expandImg = document.getElementById('expandedImg');
-  var imgtext = document.getElementById('imgtext');
+  var imgText = document.getElementById('imgtext');
   expandImg.src = imgs.src;
- imgtext.innerHTML = imgs.alt;
+ imgText.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = 'block';
   }

@@ -98,13 +98,13 @@ let main = (function () {
 	}
 
 	function saveToStorage(product) {
-		let products = getProductFromStorage();
+		let products = getFromStorage();
 		products.push(product);
 		saveTotalInStorage(products);
 		sessionStorage.setItem('products', JSON.stringify(products));
 	}
 
-	function getProductFromStorage() {
+	function getFromStorage() {
 		let products;
 		if (sessionStorage.getItem('products') === null) {
 			products = [];
@@ -122,11 +122,11 @@ let main = (function () {
 			productId = product.querySelector('a').getAttribute('id');
 			console.log(productId);
 		}
-		removeProductFromSStorage(productId);
+		removeFromStorage(productId);
 	}
 
-	function removeProductFromSStorage(id) {
-		let productsSS = getProductFromStorage();
+	function removeFromStorage(id) {
+		let productsSS = getFromStorage();
 		productsSS.forEach(function (productSS, index) {
 			if (productSS.cart_id == id) {
 				productsSS.splice(index, 1);
@@ -138,16 +138,11 @@ let main = (function () {
 	}
 
 	function emptyCart() {
-		emptySStorage();
 		$shopCart.html('');
 		$('#total').html('');
-	}
-
-	function emptySStorage() {
 		sessionStorage.clear();
 		cart = 1;
 	}
-
 	return {
 		start
 	};

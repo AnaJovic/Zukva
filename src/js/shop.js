@@ -24,9 +24,9 @@ const _api = axios.create({
   displayProduct();
 
   $('#prod-list').click(async (e) => {
-    const prop = e.target.innerHTML;
+    const prodid = e.target.innerHTML;
     let id;
-    switch (prop) {
+    switch (prodid) {
       case 'All': id = 0;
       break;
       case 'Spreads': id = 1;
@@ -46,12 +46,12 @@ const _api = axios.create({
     let response = await _api.get(`/product?prid=${id}`);
     let product = await response.data;
     let responset = await _api.get(`/product?allid=${id}`);
-    let productt = await responset.data;
+    let producti = await responset.data;
     $(`#catalog`).html('');
     for (const prod of product) {
       _render(prod);
     }
-    for (const prod of productt) {
+    for (const prod of producti) {
       _render(prod);
     }
 });

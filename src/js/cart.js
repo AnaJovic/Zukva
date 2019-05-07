@@ -4,7 +4,7 @@
 
     delivery.on('input', deliveryOpt);
     $(document).on('DOMContentLoaded', function () {
-        getFromSStorage();
+        displayFromSStorage();
         getFormData();
         registerInputEvent();
     });
@@ -18,7 +18,7 @@
         return products;
     }
 
-    function getTotalFromLocalStorage() {
+    function getTotalFromStorage() {
         let total;
         if (sessionStorage.getItem('total') === null) {
             total = '';
@@ -28,9 +28,9 @@
         return total;
     }
 
-    function getFromSStorage() {
+    function displayFromSStorage() {
         let productsSS = getProductFromStorage();
-        let total = getTotalFromLocalStorage();
+        let total = getTotalFromStorage();
         productsSS.forEach(function (product) {
             const {
                 name, price, quantity, image, productSum
@@ -61,7 +61,7 @@
     }
 
     function expDel(check) {
-        let total = getTotalFromLocalStorage();
+        let total = getTotalFromStorage();
         let toPay = document.getElementById('pay');
         if (check.checked) {
             toPay.style.display = 'block';
@@ -73,7 +73,7 @@
         }
     }
     function expDelT(check) {
-        let total = getTotalFromLocalStorage();
+        let total = getTotalFromStorage();
         let toPay = document.getElementById('pay');
         if (check.checked) {
             toPay.style.display = 'block';
