@@ -87,7 +87,7 @@ legend{
 }
 #user-data input {
    height: 30px;
-   width: 200px;
+   width: 150px;
 }
 .button {
    width: 50%;
@@ -172,6 +172,9 @@ li a {
 #modbtn:hover{
    background-color: rgb(78, 129, 129);
    color: whitesmoke
+}
+sup{
+   color: red
 }
 @media screen and (max-width: 1000px) {
    main {

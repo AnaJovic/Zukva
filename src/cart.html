@@ -52,9 +52,9 @@
            
                 <h4 id="deli">Delivery</h4>
                 <input type="radio" name="delivery" value="Express Delivery" id="express1" class="radio">
-                <label>300 RSD PostExpres</label><br><br>
+                <label for="express1">300 RSD PostExpres</label><br><br>
                 <input type="radio" name="delivery" value="Express Delivery" id="express2" class="radio">
-                <label>400 RSD Aks</label><br><br>
+                <label for="express2">400 RSD Aks</label><br><br>
             
             <div>
     <span id="pay"></span>
@@ -71,36 +71,37 @@
                     <legend>Contact Info</legend>
         <table>
             <tr>
-                <td>First Name:</td>
-                <td><input type="text" id="firstName" name="firstName" class="bradius" placeholder="Name" required>
+                <td>First Name<sup>&lowast;</sup></td>
+                <td><input type="text" id="firstName" name="firstName" class="bradius" placeholder="Name">
                 </td>
             </tr>
             <tr>
-                <td>Last Name:</td>
-                <td><input type="text" id="lastName" name="lastName" class="bradius" placeholder="Last Name" required>
+                <td>Last Name<sup>&lowast;</sup></td>
+                <td><input type="text" id="lastName" name="lastName" class="bradius" placeholder="Last Name">
                 </td>
             </tr>
             <tr>
-                <td>Address:</td>
-                <td><input type="text" id="address" name="address" class="bradius" placeholder="Address" required>
+                <td>Address<sup>&lowast;</sup></td>
+                <td><input type="text" id="address" name="address" class="bradius" placeholder="Address">
                 </td>
             </tr>
             <tr>
-                <td>City:</td>
-                <td><input type="text" id="city" name="city" class="bradius" placeholder="City" required>
+                <td>City<sup>&lowast;</sup></td>
+                <td><input type="text" id="city" name="city" class="bradius" placeholder="City">
                 </td>
             </tr>
             <tr>
-                <td>Telephone:</td>
-                <td><input type="tel" id="phone" name="phone" class="bradius" placeholder="06*/****-***" required>
+                <td>Telephone<sup>&lowast;</sup></td>
+                <td><input type="tel" id="phone" name="phone" class="bradius" placeholder="06*/****-***">
                 </td>
             </tr>
             <tr>
                 <td>E-mail:</td>
-                <td><input type="email" id="email" class="bradius" name="email" placeholder="me@mail.com">
+                <td><input type="email" id="email" class="bradius" name="email" placeholder="you@mail.com">
                 </td>
             </tr>
         </table>
+        <p>Fields marked with <sup>&lowast;</sup> are required</p>
     </fieldset>
     </form>
     <div>
